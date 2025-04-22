@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import { Tab, Switch } from '@headlessui/react';
+import { Tab } from '@headlessui/react';
 import { CheckCircleIcon, ExclamationCircleIcon } from '@heroicons/react/24/outline';
 import ToolSelector from './components/ToolSelector';
 
@@ -27,12 +27,12 @@ const metricKeyMap: Record<string, keyof Iteration> = {
 };
 
 export default function ControlAgentDesigner() {
-  const [darkMode, setDarkMode] = useState(false);
+  // const [darkMode, setDarkMode] = useState(false);
   const [phaseMargin, setPhaseMargin] = useState('');
   const [tsMin, setTsMin] = useState('');
   const [tsMax, setTsMax] = useState('');
   const [ess, setEss] = useState('');
-  const [status, setStatus] = useState('running');
+  const [status] = useState('running');
 
   const tsError = tsMin !== '' && tsMax !== '' && (Number(tsMin) < 0 || Number(tsMax) < 0 || Number(tsMin) > Number(tsMax));
   const formValid = phaseMargin && tsMin && tsMax && ess && !tsError;
