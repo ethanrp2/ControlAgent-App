@@ -1,103 +1,238 @@
-import Image from "next/image";
+'use client';
 
-export default function Home() {
+import React, { useState } from 'react';
+import { Tab, Switch } from '@headlessui/react';
+import { CheckCircleIcon, ExclamationCircleIcon } from '@heroicons/react/24/outline';
+import ToolSelector from './components/ToolSelector';
+
+interface Iteration {
+  id: number;
+  omegaL: number;
+  beta: number;
+  Ts: number;
+  phiM: number;
+  ess: number;
+  status: string;
+}
+
+const iterations: Iteration[] = [
+  { id: 1, omegaL: 1.2, beta: 0.5, Ts: 2.3, phiM: 45, ess: 0.01, status: 'fail' },
+  { id: 2, omegaL: 1.5, beta: 0.7, Ts: 3.1, phiM: 30, ess: 0.02, status: 'ok' },
+];
+
+const metricKeyMap: Record<string, keyof Iteration> = {
+  'Ts': 'Ts',
+  'φm': 'phiM',
+  'ess': 'ess'
+};
+
+export default function ControlAgentDesigner() {
+  const [darkMode, setDarkMode] = useState(false);
+  const [phaseMargin, setPhaseMargin] = useState('');
+  const [tsMin, setTsMin] = useState('');
+  const [tsMax, setTsMax] = useState('');
+  const [ess, setEss] = useState('');
+  const [status, setStatus] = useState('running');
+
+  const tsError = tsMin !== '' && tsMax !== '' && (Number(tsMin) < 0 || Number(tsMax) < 0 || Number(tsMin) > Number(tsMax));
+  const formValid = phaseMargin && tsMin && tsMax && ess && !tsError;
+
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+    <div className={'dark'}>
+      <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-sans">
+        <header className="fixed top-0 w-full bg-white dark:bg-gray-800 shadow-md z-20 px-6 py-4 flex justify-between items-center">
+          <div className="text-xl font-bold">ControlAgent Designer</div>
+          <nav className="flex items-center space-x-6">
+            <ToolSelector />
+            <a href="#">History</a>
+            <a href="#">Docs</a>
+            {/* <Switch checked={darkMode} onChange={setDarkMode} className="relative inline-flex h-6 w-11 items-center rounded-full bg-gray-200 dark:bg-gray-600 focus:outline-none">
+              <span className="sr-only">Toggle dark mode</span>
+              <span className={`${darkMode ? 'translate-x-6' : 'translate-x-1'} inline-block h-4 w-4 transform rounded-full bg-white transition`} />
+            </Switch> */}
+            <img
+              src="https://i.pravatar.cc/4"
+              alt="Profile"
+              className="w-8 h-8 rounded-full border-2 border-gray-200 dark:border-gray-600"
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+          </nav>
+        </header>
+
+        <main className="pt-20 p-6 grid grid-cols-12 gap-6">
+          <section className="col-span-4 sticky top-20">
+            <div className="bg-white dark:bg-gray-800 shadow-md rounded-2xl p-6">
+              <h2 className="text-lg font-semibold mb-4">Task Setup</h2>
+              <div className="space-y-4">
+                <div>
+                  <label className="block text-sm font-medium">Plant Model</label>
+                  <textarea
+                    rows={4}
+                    className="mt-1 block w-full font-mono bg-gray-50 dark:bg-gray-700 rounded-2xl p-2 border border-gray-200 dark:border-gray-600"
+                    placeholder="\\(G(s)=\frac{1}{s+1}\\)"
+                  />
+                  <p className="text-xs italic text-gray-500">LaTeX syntax</p>
+                </div>
+                <div>
+                  <label className="block text-sm font-medium">Phase Margin ≥</label>
+                  <div className="relative">
+                    <input
+                      type="number"
+                      className="w-full rounded-2xl pr-10 p-2 border border-gray-200 dark:border-gray-600"
+                      placeholder="45"
+                      value={phaseMargin}
+                      onChange={e => setPhaseMargin(e.target.value)}
+                    />
+                    <span className="absolute inset-y-0 right-3 flex items-center">°</span>
+                  </div>
+                </div>
+                <div>
+                  <label className="block text-sm font-medium">Settling Time</label>
+                  <div className="flex items-center space-x-2">
+                    <input
+                      type="number"
+                      className="w-full rounded-2xl p-2 border border-gray-200 dark:border-gray-600"
+                      placeholder="0.0048"
+                      value={tsMin}
+                      onChange={e => setTsMin(e.target.value)}
+                    />
+                    <div className="text-gray-500">–</div>
+                    <input
+                      type="number"
+                      className="w-full rounded-2xl p-2 border border-gray-200 dark:border-gray-600"
+                      placeholder="3.7264"
+                      value={tsMax}
+                      onChange={e => setTsMax(e.target.value)}
+                    />
+                    {/* <span className="text-gray-500">s</span> */}
+                  </div>
+                  <p className={tsError ? 'text-red-600 text-xs' : 'text-gray-500 text-xs'}>0.0048 ≤ Ts ≤ 3.7264</p>
+                </div>
+                <div>
+                  <label className="block text-sm font-medium">Steady‑State Error ≤</label>
+                  <div className="relative">
+                    <input
+                      type="number"
+                      className="w-full rounded-2xl pr-10 p-2 border border-gray-200 dark:border-gray-600"
+                      placeholder="0.01"
+                      value={ess}
+                      onChange={e => setEss(e.target.value)}
+                    />
+                    <span className="absolute inset-y-0 right-3 flex items-center">–</span>
+                  </div>
+                </div>
+                <button
+                  disabled={!formValid}
+                  // className={`w-full py-2 rounded-2xl text-white font-semibold shadow-md transition ${
+                  //   formValid ? 'bg-indigo-600 hover:bg-indigo-700' : 'bg-gray-300 cursor-not-allowed'
+                  // }`}
+                  className={`w-full py-2 rounded-2xl text-white font-semibold shadow-md transition ${
+                    'bg-indigo-600 hover:bg-indigo-700'
+                  }`}
+                >Start Design</button>
+              </div>
+            </div>
+          </section>
+
+          <section className="col-span-8 overflow-y-auto space-y-6">
+            <div className="bg-white dark:bg-gray-800 shadow-md rounded-2xl p-6">
+              <h2 className="text-lg font-semibold mb-4">Run Dashboard</h2>
+              <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-lg h-3 mb-4">
+                <div className="bg-indigo-600 h-3 rounded-lg w-1/3 transition-width duration-300" />
+              </div>
+              <div className="space-y-4">
+                {iterations.map(iter => (
+                  <div key={iter.id} className="bg-white dark:bg-gray-700 shadow-md rounded-xl p-4 animate-slide-in">
+                    <div className="flex items-center justify-between mb-2">
+                      <span className="bg-indigo-600 text-white text-sm px-2 py-1 rounded-full">Iter {iter.id}</span>
+                    </div>
+                    <div className="grid grid-cols-2 gap-4 text-sm mb-2">
+                      <div>ω<sub>L</sub>: {iter.omegaL}</div>
+                      <div>β: {iter.beta}</div>
+                    </div>
+                    <div className="flex space-x-2">
+                      {['Ts', 'φm', 'ess'].map(key => (
+                        <span key={key} className="flex items-center space-x-1 px-2 py-1 rounded-full text-xs font-medium bg-gray-100 dark:bg-gray-600">
+                          {iter.status === 'ok' ? <CheckCircleIcon className="w-4 h-4 text-green-500" /> : <ExclamationCircleIcon className="w-4 h-4 text-red-500" />}
+                          <span>{key}: {iter[metricKeyMap[key]]}</span>
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="bg-white dark:bg-gray-800 shadow-md rounded-2xl p-6">
+              <Tab.Group>
+                <Tab.List className="flex space-x-4 border-b border-gray-200 dark:border-gray-700 mb-4">
+                  {['Step Response', 'Bode Plot'].map(tab => (
+                    <Tab key={tab} className={({ selected }) => `py-2 px-4 text-sm font-medium rounded-t-xl ${selected ? 'bg-white dark:bg-gray-900 shadow-md' : 'text-gray-500 dark:text-gray-400'}`}>
+                      {tab}
+                    </Tab>
+                  ))}
+                </Tab.List>
+                <Tab.Panels>
+                  {['Step Response', 'Bode Plot'].map(tab => (
+                    <Tab.Panel key={tab} className="pb-4">
+                      <div className="w-full aspect-w-16 aspect-h-9 bg-gray-200 dark:bg-gray-700 rounded-xl flex items-center justify-center">
+                        <span className="text-gray-400 italic">{tab} Placeholder</span>
+                      </div>
+                    </Tab.Panel>
+                  ))}
+                </Tab.Panels>
+              </Tab.Group>
+            </div>
+
+            <div className="bg-yellow-50 dark:bg-yellow-900 border-l-4 border-yellow-400 dark:border-yellow-600 rounded-2xl p-6">
+              <h3 className="font-semibold mb-2">Insight</h3>
+              <p className="text-sm">Latest iteration failed: adjust specs.</p>
+            </div>
+
+            {status === 'done' && (
+              <div className="bg-white dark:bg-gray-800 shadow-md rounded-2xl p-6 animate-fade-in">
+                <h2 className="text-lg font-semibold mb-4">Final Results</h2>
+                <div className="grid grid-cols-2 gap-6">
+                  <div>
+                    <p className="font-mono text-sm">{'\\(K(s)=\frac{3.317s}{1.917s+1.818}\\)'}</p>
+                  </div>
+                  <div>
+                    <table className="w-full text-sm mb-4">
+                      <thead>
+                        <tr><th className="text-left">Metric</th><th className="text-left">Value</th></tr>
+                      </thead>
+                      <tbody>
+                        {[
+                          { name: 'Phase Margin', value: '45°' },
+                          { name: 'Settling Time', value: '2.3s' },
+                          { name: 'ess', value: '0.01' },
+                        ].map(r => (
+                          <tr key={r.name}>
+                            <td className="flex items-center space-x-1"><CheckCircleIcon className="w-4 h-4 text-green-500" /><span>{r.name}</span></td>
+                            <td>{r.value}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                    <div className="flex space-x-4">
+                      <button className="flex-1 py-2 rounded-2xl bg-gray-200 dark:bg-gray-700 text-sm font-medium hover:bg-gray-300">Copy JSON</button>
+                      <button className="flex-1 py-2 rounded-2xl bg-indigo-600 text-white text-sm font-medium hover:bg-indigo-700">Download Plots</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
+          </section>
+        </main>
+
+        <button className="fixed bottom-6 right-6 bg-indigo-600 hover:bg-indigo-700 text-white p-4 rounded-full shadow-lg">Export</button>
+
+        <style jsx global>{`
+          @keyframes slideIn { from { transform: translateX(100%); opacity: 0 } to { transform: translateX(0); opacity: 1 } }
+          .animate-slide-in { animation: slideIn 300ms ease-out; }
+          @keyframes fadeIn { from { opacity: 0 } to { opacity: 1 } }
+          .animate-fade-in { animation: fadeIn 500ms ease-in; }
+        `}</style>
+      </div>
     </div>
   );
 }
