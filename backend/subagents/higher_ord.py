@@ -19,7 +19,7 @@ class higher_ord_Design:
     def handle_task(self, system, thresholds, task_requirement, scenario):
         num_attempt = 1
         # Implement the task handling process
-        print(f"Handling controller design for system {system['id']} in scenario {scenario}")
+        # print(f"Handling controller design for system {system['id']} in scenario {scenario}")
 
         # Construct the design prompt
         num = [system['num'][0]]
@@ -40,7 +40,7 @@ class higher_ord_Design:
         conversation_log = []
 
         while num_attempt <= self.max_attempts:
-            print(f"Iteration {num_attempt} for system {system['id']} scenario {scenario}\n")
+            # print(f"Iteration {num_attempt} for system {system['id']} scenario {scenario}\n")
             # Call GPT4 to complete the prompt
             response = self.gpt4.complete(problem_statement)
 
@@ -124,11 +124,11 @@ class higher_ord_Design:
             }
         
         # Save conversation log
-        output_dir = os.path.join(self.base_output_dir, f"higher_ord")
-        os.makedirs(output_dir, exist_ok=True)  
-        output_file = os.path.join(output_dir, f"conversation_{system['id']}.json")
-        with open(output_file, 'w') as f:
-            json.dump(conversation_log, f, indent=4)
+        # output_dir = os.path.join(self.base_output_dir, f"higher_ord")
+        # os.makedirs(output_dir, exist_ok=True)  
+        # output_file = os.path.join(output_dir, f"conversation_{system['id']}.json")
+        # with open(output_file, 'w') as f:
+        #     json.dump(conversation_log, f, indent=4)
 
 
         # Extract the list of parameters
