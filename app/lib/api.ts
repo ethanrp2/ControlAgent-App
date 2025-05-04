@@ -1,8 +1,9 @@
 // app/lib/api.ts
+
 export interface ControlInputs {
-    num: number[];                // e.g. [b0]
-    den: number[];                // e.g. [a0, a1]
-    tau?: number;                 // optional delay
+    num: number[];                
+    den: number[];                
+    tau?: number;                 
     phase_margin_min: number;
     settling_time_min: number;
     settling_time_max: number;
@@ -12,8 +13,8 @@ export interface ControlInputs {
   
   export interface ApiResponse {
     success: boolean;
-    data: any;  // whatever your runner returns
-    detail?: string; // on error
+    data: unknown;      // <-- now unknown instead of any
+    detail?: string;
   }
   
   export async function evaluateController(
@@ -25,8 +26,9 @@ export interface ControlInputs {
       body: JSON.stringify(inputs),
     });
     if (!res.ok) {
-      const err = await res.json();
-      throw new Error(err.detail || res.statusText);
+      const err = await res.json() as { detail?: string };
+      throw new Error(err.detail ?? res.statusText);
     }
-    return res.json();
+    // it's OK to return unknown here; the consumer can inspect/validate
+    return res.json() as Promise<ApiResponse>;
   }
