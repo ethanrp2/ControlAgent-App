@@ -1,0 +1,902 @@
+[
+    {
+        "id": 0,
+        "num": [
+            19.95021931031938
+        ],
+        "den": [
+            1,
+            0.3896702460734107
+        ],
+        "gain_margin_min": 8.62870302276917,
+        "phase_margin_min": 71.54215764094216,
+        "overshoot_max": 10.66329445944194,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "settling_time_min": 0.004778155924598053,
+        "settling_time_max": 3.72640213624652,
+        "scenario": "fast"
+    },
+    {
+        "id": 1,
+        "num": [
+            7.655708181262964
+        ],
+        "den": [
+            1,
+            14.550345193500485
+        ],
+        "gain_margin_min": 6.087889248301407,
+        "phase_margin_min": 63.96436599038023,
+        "overshoot_max": 16.709979010893864,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "settling_time_min": 0.00018823260198819674,
+        "settling_time_max": 0.06636117958004117,
+        "scenario": "fast"
+    },
+    {
+        "id": 2,
+        "num": [
+            18.662384850325665
+        ],
+        "den": [
+            1,
+            18.602958674563435
+        ],
+        "gain_margin_min": 8.56390469616193,
+        "phase_margin_min": 49.08687317636779,
+        "overshoot_max": 15.704610678075602,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "settling_time_min": 0.0001302533859424881,
+        "settling_time_max": 0.07634724198364602,
+        "scenario": "fast"
+    },
+    {
+        "id": 3,
+        "num": [
+            2.1898341598528726
+        ],
+        "den": [
+            1,
+            10.985103546166963
+        ],
+        "gain_margin_min": 6.1943563231781695,
+        "phase_margin_min": 81.74224400930163,
+        "overshoot_max": 13.72388417349115,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "settling_time_min": 0.00016142561850893676,
+        "settling_time_max": 0.11395932404415612,
+        "scenario": "fast"
+    },
+    {
+        "id": 4,
+        "num": [
+            5.008694487582518
+        ],
+        "den": [
+            1,
+            7.128445742178252
+        ],
+        "gain_margin_min": 8.247357026089883,
+        "phase_margin_min": 84.68263741693119,
+        "overshoot_max": 16.48792422697766,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "settling_time_min": 0.0001962415848518711,
+        "settling_time_max": 0.1332017184475027,
+        "scenario": "fast"
+    },
+    {
+        "id": 5,
+        "num": [
+            0.8168824160971321
+        ],
+        "den": [
+            1,
+            16.390997240152185
+        ],
+        "gain_margin_min": 9.913927320004358,
+        "phase_margin_min": 69.95100280438734,
+        "overshoot_max": 7.871297687725846,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "settling_time_min": 0.00013950165327983533,
+        "settling_time_max": 0.06488722567964238,
+        "scenario": "fast"
+    },
+    {
+        "id": 6,
+        "num": [
+            5.467783159310167
+        ],
+        "den": [
+            1,
+            14.245876106580365
+        ],
+        "gain_margin_min": 7.9813583096696785,
+        "phase_margin_min": 48.613764807507046,
+        "overshoot_max": 9.31342926345447,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "settling_time_min": 8.742262101801309e-05,
+        "settling_time_max": 0.09091063355603247,
+        "scenario": "fast"
+    },
+    {
+        "id": 7,
+        "num": [
+            5.659489358120333
+        ],
+        "den": [
+            1,
+            3.4440519369714453
+        ],
+        "gain_margin_min": 6.126030588664885,
+        "phase_margin_min": 70.6323570828715,
+        "overshoot_max": 11.810437186772909,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "settling_time_min": 9.936960102736236e-05,
+        "settling_time_max": 0.2976469404331733,
+        "scenario": "fast"
+    },
+    {
+        "id": 8,
+        "num": [
+            9.386574077152185
+        ],
+        "den": [
+            1,
+            11.332732658016571
+        ],
+        "gain_margin_min": 6.330917835927206,
+        "phase_margin_min": 86.5353631515971,
+        "overshoot_max": 14.303045803129963,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "settling_time_min": 9.073274737290392e-05,
+        "settling_time_max": 0.12851941599932445,
+        "scenario": "fast"
+    },
+    {
+        "id": 9,
+        "num": [
+            6.6539543898007985
+        ],
+        "den": [
+            1,
+            4.108020600409638
+        ],
+        "gain_margin_min": 8.461098338606032,
+        "phase_margin_min": 53.76054602907687,
+        "overshoot_max": 13.107779046834565,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "settling_time_min": 0.00020382736170391824,
+        "settling_time_max": 0.3117648656387996,
+        "scenario": "fast"
+    },
+    {
+        "id": 10,
+        "num": [
+            4.431075292469882
+        ],
+        "den": [
+            1,
+            11.53167009271121
+        ],
+        "gain_margin_min": 9.740929655073582,
+        "phase_margin_min": 82.67591282146468,
+        "overshoot_max": 14.448153517186995,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "settling_time_min": 0.00021251107304584617,
+        "settling_time_max": 0.1093468692872471,
+        "scenario": "fast"
+    },
+    {
+        "id": 11,
+        "num": [
+            19.137801559709132
+        ],
+        "den": [
+            1,
+            5.474162581352333
+        ],
+        "gain_margin_min": 5.200008045191929,
+        "phase_margin_min": 67.21508507413465,
+        "overshoot_max": 19.334780730347802,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "settling_time_min": 0.00047134108029635074,
+        "settling_time_max": 0.1910602293320874,
+        "scenario": "fast"
+    },
+    {
+        "id": 12,
+        "num": [
+            3.2333182303257604
+        ],
+        "den": [
+            1,
+            11.628527878370436
+        ],
+        "gain_margin_min": 5.675257196055486,
+        "phase_margin_min": 69.55216576147404,
+        "overshoot_max": 7.970855566241884,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "settling_time_min": 4.2229513460617196e-05,
+        "settling_time_max": 0.12736257127552952,
+        "scenario": "fast"
+    },
+    {
+        "id": 13,
+        "num": [
+            7.696864301313748
+        ],
+        "den": [
+            1,
+            6.851511747243936
+        ],
+        "gain_margin_min": 7.311493915830266,
+        "phase_margin_min": 66.06378574309556,
+        "overshoot_max": 11.626035634887131,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "settling_time_min": 0.0001998934995037117,
+        "settling_time_max": 0.17952221932486148,
+        "scenario": "fast"
+    },
+    {
+        "id": 14,
+        "num": [
+            16.433741873328366
+        ],
+        "den": [
+            1,
+            9.061793899776784
+        ],
+        "gain_margin_min": 6.1539494552374805,
+        "phase_margin_min": 73.60368488157198,
+        "overshoot_max": 5.963407486958815,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "settling_time_min": 0.00021835383547707667,
+        "settling_time_max": 0.12081986691046677,
+        "scenario": "fast"
+    },
+    {
+        "id": 15,
+        "num": [
+            19.313600594383253
+        ],
+        "den": [
+            1,
+            17.115960155229047
+        ],
+        "gain_margin_min": 6.943601745517022,
+        "phase_margin_min": 74.34661610844017,
+        "overshoot_max": 13.772655052645058,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "settling_time_min": 0.00010219846871104505,
+        "settling_time_max": 0.07900522704003396,
+        "scenario": "fast"
+    },
+    {
+        "id": 16,
+        "num": [
+            19.78517079007646
+        ],
+        "den": [
+            1,
+            2.853974670916657
+        ],
+        "gain_margin_min": 8.271482545103721,
+        "phase_margin_min": 68.26522079295809,
+        "overshoot_max": 11.619099652972736,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "settling_time_min": 0.0005197021101038615,
+        "settling_time_max": 0.5032063927765178,
+        "scenario": "fast"
+    },
+    {
+        "id": 17,
+        "num": [
+            11.943753039181233
+        ],
+        "den": [
+            1,
+            16.247813466176623
+        ],
+        "gain_margin_min": 5.567435309123874,
+        "phase_margin_min": 63.89605662235536,
+        "overshoot_max": 14.215465247763614,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "settling_time_min": 0.00016461176943416357,
+        "settling_time_max": 0.09095079394632499,
+        "scenario": "fast"
+    },
+    {
+        "id": 18,
+        "num": [
+            3.320442644077629
+        ],
+        "den": [
+            1,
+            4.299025688015659
+        ],
+        "gain_margin_min": 7.885099456258682,
+        "phase_margin_min": 70.59196562783026,
+        "overshoot_max": 6.895761112225985,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "settling_time_min": 0.00035046719930105865,
+        "settling_time_max": 0.24996480020065243,
+        "scenario": "fast"
+    },
+    {
+        "id": 19,
+        "num": [
+            5.336153072293279
+        ],
+        "den": [
+            1,
+            2.574309915181192
+        ],
+        "gain_margin_min": 7.277013004148535,
+        "phase_margin_min": 76.93668846553255,
+        "overshoot_max": 11.783042600826104,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "settling_time_min": 0.0010264924389470245,
+        "settling_time_max": 0.40221574715502434,
+        "scenario": "fast"
+    },
+    {
+        "id": 20,
+        "num": [
+            0.5397669051779812
+        ],
+        "den": [
+            1,
+            10.256896368728091
+        ],
+        "gain_margin_min": 7.349107424355788,
+        "phase_margin_min": 70.67215987420366,
+        "overshoot_max": 6.4832948075258,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "settling_time_min": 9.58498587179876e-05,
+        "settling_time_max": 0.1160364288277398,
+        "scenario": "fast"
+    },
+    {
+        "id": 21,
+        "num": [
+            6.2081871283511045
+        ],
+        "den": [
+            1,
+            4.469900793794303
+        ],
+        "gain_margin_min": 7.914364108206333,
+        "phase_margin_min": 49.86817387321499,
+        "overshoot_max": 14.348426819869358,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "settling_time_min": 0.00030398775646971144,
+        "settling_time_max": 0.29772413026693717,
+        "scenario": "fast"
+    },
+    {
+        "id": 22,
+        "num": [
+            15.349779988482958
+        ],
+        "den": [
+            1,
+            0.41489356782555586
+        ],
+        "gain_margin_min": 9.451450579345481,
+        "phase_margin_min": 70.89001107629628,
+        "overshoot_max": 6.976414857048304,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "settling_time_min": 0.005168477169980317,
+        "settling_time_max": 2.9946272429165206,
+        "scenario": "fast"
+    },
+    {
+        "id": 23,
+        "num": [
+            4.990805981032311
+        ],
+        "den": [
+            1,
+            9.370889311454107
+        ],
+        "gain_margin_min": 7.02875233299654,
+        "phase_margin_min": 57.70589631501298,
+        "overshoot_max": 16.35743907416694,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "settling_time_min": 0.0003140104904655222,
+        "settling_time_max": 0.12720234063975383,
+        "scenario": "fast"
+    },
+    {
+        "id": 24,
+        "num": [
+            8.411373627275822
+        ],
+        "den": [
+            1,
+            9.488242434425985
+        ],
+        "gain_margin_min": 7.4013458489165735,
+        "phase_margin_min": 69.01182545443845,
+        "overshoot_max": 15.116883716534934,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "settling_time_min": 0.00020136420955439794,
+        "settling_time_max": 0.13158983662984614,
+        "scenario": "fast"
+    },
+    {
+        "id": 25,
+        "num": [
+            14.733497663073527
+        ],
+        "den": [
+            1,
+            9.963695078754577
+        ],
+        "gain_margin_min": 8.04462407759077,
+        "phase_margin_min": 68.7530586753316,
+        "overshoot_max": 9.21685619391086,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "settling_time_min": 0.00015032075597086976,
+        "settling_time_max": 0.15014477879959193,
+        "scenario": "fast"
+    },
+    {
+        "id": 26,
+        "num": [
+            19.09209236809402
+        ],
+        "den": [
+            1,
+            14.259046523171431
+        ],
+        "gain_margin_min": 5.991679675209207,
+        "phase_margin_min": 55.83828313486874,
+        "overshoot_max": 6.131443739940151,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "settling_time_min": 2.1837642475633127e-05,
+        "settling_time_max": 0.07821995894715544,
+        "scenario": "fast"
+    },
+    {
+        "id": 27,
+        "num": [
+            19.994934680286498
+        ],
+        "den": [
+            1,
+            6.859701845682293
+        ],
+        "gain_margin_min": 5.422962896862202,
+        "phase_margin_min": 61.608261522154365,
+        "overshoot_max": 19.67993776011946,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "settling_time_min": 1.319720696849424e-05,
+        "settling_time_max": 0.21107465999439384,
+        "scenario": "fast"
+    },
+    {
+        "id": 28,
+        "num": [
+            6.320967437802861
+        ],
+        "den": [
+            1,
+            7.289934314716213
+        ],
+        "gain_margin_min": 5.35692875667987,
+        "phase_margin_min": 83.84770312804362,
+        "overshoot_max": 12.277074399840322,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "settling_time_min": 0.00018396459091799038,
+        "settling_time_max": 0.139522084529487,
+        "scenario": "fast"
+    },
+    {
+        "id": 29,
+        "num": [
+            10.978125462353239
+        ],
+        "den": [
+            1,
+            17.083312861637545
+        ],
+        "gain_margin_min": 6.841008176814074,
+        "phase_margin_min": 63.14842066554547,
+        "overshoot_max": 14.377394948637809,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "settling_time_min": 9.655084456433103e-05,
+        "settling_time_max": 0.0825292126522697,
+        "scenario": "fast"
+    },
+    {
+        "id": 30,
+        "num": [
+            9.854118652835435
+        ],
+        "den": [
+            1,
+            3.561561256419422
+        ],
+        "gain_margin_min": 6.385217374227352,
+        "phase_margin_min": 65.53783782075183,
+        "overshoot_max": 9.382167017963152,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "settling_time_min": 0.0005254201637709003,
+        "settling_time_max": 0.2869311615463319,
+        "scenario": "fast"
+    },
+    {
+        "id": 31,
+        "num": [
+            7.6421490195077935
+        ],
+        "den": [
+            1,
+            13.781019276804518
+        ],
+        "gain_margin_min": 5.533432624125393,
+        "phase_margin_min": 73.70325578288853,
+        "overshoot_max": 13.026350475263932,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "settling_time_min": 5.277865145053084e-05,
+        "settling_time_max": 0.09037883154495208,
+        "scenario": "fast"
+    },
+    {
+        "id": 32,
+        "num": [
+            8.735605489897411
+        ],
+        "den": [
+            1,
+            12.635297222069681
+        ],
+        "gain_margin_min": 9.899288861633194,
+        "phase_margin_min": 69.7602329187831,
+        "overshoot_max": 17.30879024056333,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "settling_time_min": 0.00011458290641218668,
+        "settling_time_max": 0.112967904042626,
+        "scenario": "fast"
+    },
+    {
+        "id": 33,
+        "num": [
+            10.240343534340225
+        ],
+        "den": [
+            1,
+            15.473930364339589
+        ],
+        "gain_margin_min": 6.7474981536280785,
+        "phase_margin_min": 83.043721897612,
+        "overshoot_max": 16.26386889432994,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "settling_time_min": 1.3138533891283337e-05,
+        "settling_time_max": 0.06300820458029968,
+        "scenario": "fast"
+    },
+    {
+        "id": 34,
+        "num": [
+            1.6451729940316895
+        ],
+        "den": [
+            1,
+            5.640905868729365
+        ],
+        "gain_margin_min": 7.201244841779761,
+        "phase_margin_min": 87.82295767678576,
+        "overshoot_max": 12.620731279977424,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "settling_time_min": 0.00037427916036758313,
+        "settling_time_max": 0.2467721340713489,
+        "scenario": "fast"
+    },
+    {
+        "id": 35,
+        "num": [
+            2.7261890853326816
+        ],
+        "den": [
+            1,
+            4.560618913046296
+        ],
+        "gain_margin_min": 8.262271319210473,
+        "phase_margin_min": 75.52471722008585,
+        "overshoot_max": 14.531124789686654,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "settling_time_min": 0.0005659203087881062,
+        "settling_time_max": 0.2505794281951277,
+        "scenario": "fast"
+    },
+    {
+        "id": 36,
+        "num": [
+            9.17789591044831
+        ],
+        "den": [
+            1,
+            2.035374758921183
+        ],
+        "gain_margin_min": 5.632491099113993,
+        "phase_margin_min": 52.649480478264074,
+        "overshoot_max": 10.580633180872812,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "settling_time_min": 0.0011910807404239196,
+        "settling_time_max": 0.6385742022088157,
+        "scenario": "fast"
+    },
+    {
+        "id": 37,
+        "num": [
+            11.322793488699942
+        ],
+        "den": [
+            1,
+            15.638785720251887
+        ],
+        "gain_margin_min": 7.974319855721237,
+        "phase_margin_min": 68.24236667634301,
+        "overshoot_max": 9.115873284903362,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "settling_time_min": 7.357016557491157e-05,
+        "settling_time_max": 0.060459403820267016,
+        "scenario": "fast"
+    },
+    {
+        "id": 38,
+        "num": [
+            6.424448762205992
+        ],
+        "den": [
+            1,
+            0.7910055989996865
+        ],
+        "gain_margin_min": 8.902771463560669,
+        "phase_margin_min": 82.87809934588057,
+        "overshoot_max": 13.71003394997046,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "settling_time_min": 0.0027831347930849463,
+        "settling_time_max": 1.4111080475246685,
+        "scenario": "fast"
+    },
+    {
+        "id": 39,
+        "num": [
+            14.920967607239577
+        ],
+        "den": [
+            1,
+            19.463644752539608
+        ],
+        "gain_margin_min": 8.434423951894685,
+        "phase_margin_min": 58.965702454620974,
+        "overshoot_max": 17.91582532139573,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "settling_time_min": 9.358073630458207e-05,
+        "settling_time_max": 0.048139532478173826,
+        "scenario": "fast"
+    },
+    {
+        "id": 40,
+        "num": [
+            0.7692771522810781
+        ],
+        "den": [
+            1,
+            18.60141449520489
+        ],
+        "gain_margin_min": 5.77367596584005,
+        "phase_margin_min": 56.79997939165699,
+        "overshoot_max": 8.187996267667852,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "settling_time_min": 7.311773224515707e-05,
+        "settling_time_max": 0.05135111331224197,
+        "scenario": "fast"
+    },
+    {
+        "id": 41,
+        "num": [
+            5.35999960403716
+        ],
+        "den": [
+            1,
+            8.885119142469165
+        ],
+        "gain_margin_min": 5.982006746399676,
+        "phase_margin_min": 58.83883333140849,
+        "overshoot_max": 16.691682453230467,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "settling_time_min": 8.669356681195905e-05,
+        "settling_time_max": 0.154349847372937,
+        "scenario": "fast"
+    },
+    {
+        "id": 42,
+        "num": [
+            6.883083690000553
+        ],
+        "den": [
+            1,
+            9.619751914140116
+        ],
+        "gain_margin_min": 5.891218890834539,
+        "phase_margin_min": 79.78591476506685,
+        "overshoot_max": 15.310447508537173,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "settling_time_min": 0.00017014260723187071,
+        "settling_time_max": 0.10596015449806245,
+        "scenario": "fast"
+    },
+    {
+        "id": 43,
+        "num": [
+            19.013290302217914
+        ],
+        "den": [
+            1,
+            5.509683402906749
+        ],
+        "gain_margin_min": 9.075709120691078,
+        "phase_margin_min": 85.29137422677246,
+        "overshoot_max": 5.379879006558184,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "settling_time_min": 0.00039496893900473724,
+        "settling_time_max": 0.17854434787805512,
+        "scenario": "fast"
+    },
+    {
+        "id": 44,
+        "num": [
+            16.136705160642695
+        ],
+        "den": [
+            1,
+            15.716366792639098
+        ],
+        "gain_margin_min": 8.311703059311089,
+        "phase_margin_min": 56.84403935067319,
+        "overshoot_max": 10.818761172800286,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "settling_time_min": 6.763274996415564e-05,
+        "settling_time_max": 0.07339863013190225,
+        "scenario": "fast"
+    },
+    {
+        "id": 45,
+        "num": [
+            4.8280010601583365
+        ],
+        "den": [
+            1,
+            11.047656389752404
+        ],
+        "gain_margin_min": 7.406963378502626,
+        "phase_margin_min": 82.25391766756279,
+        "overshoot_max": 9.280371275352465,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "settling_time_min": 0.00018433684070819436,
+        "settling_time_max": 0.12466174810342917,
+        "scenario": "fast"
+    },
+    {
+        "id": 46,
+        "num": [
+            10.645786319352997
+        ],
+        "den": [
+            1,
+            1.5623926006892073
+        ],
+        "gain_margin_min": 5.034774982849266,
+        "phase_margin_min": 48.553825399337036,
+        "overshoot_max": 7.001041483507152,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "settling_time_min": 0.0011969995294049103,
+        "settling_time_max": 0.9163742832003272,
+        "scenario": "fast"
+    },
+    {
+        "id": 47,
+        "num": [
+            10.430313924349823
+        ],
+        "den": [
+            1,
+            8.147307619208505
+        ],
+        "gain_margin_min": 6.394602779594965,
+        "phase_margin_min": 59.93526382270063,
+        "overshoot_max": 16.346659736180968,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "settling_time_min": 0.00032682084784588586,
+        "settling_time_max": 0.17442500072717382,
+        "scenario": "fast"
+    },
+    {
+        "id": 48,
+        "num": [
+            5.578467997751031
+        ],
+        "den": [
+            1,
+            16.25459784202935
+        ],
+        "gain_margin_min": 7.831110549773428,
+        "phase_margin_min": 78.78425919774527,
+        "overshoot_max": 10.821099386673318,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "settling_time_min": 0.00014669667354542853,
+        "settling_time_max": 0.05786862343706232,
+        "scenario": "fast"
+    },
+    {
+        "id": 49,
+        "num": [
+            8.426386705092163
+        ],
+        "den": [
+            1,
+            8.591219582173062
+        ],
+        "gain_margin_min": 9.858003141802278,
+        "phase_margin_min": 85.52346882139858,
+        "overshoot_max": 16.942014691763376,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "settling_time_min": 0.00012769074700002728,
+        "settling_time_max": 0.14945905344007823,
+        "scenario": "fast"
+    }
+]

@@ -1,0 +1,952 @@
+[
+    {
+        "id": 0,
+        "num": [
+            1.264
+        ],
+        "den": [
+            1,
+            12.731
+        ],
+        "tau": 0.047,
+        "gain_margin_min": 7.274,
+        "phase_margin_min": 37.876,
+        "settling_time_min": 0.215,
+        "settling_time_max": 2.1,
+        "overshoot_max": 6.55,
+        "steadystate_error_max": 0.01,
+        "metadata": "First order system with delay.",
+        "scenario": "other"
+    },
+    {
+        "id": 1,
+        "num": [
+            19.421
+        ],
+        "den": [
+            1,
+            13.155
+        ],
+        "tau": 0.038,
+        "gain_margin_min": 9.349,
+        "phase_margin_min": 35.49,
+        "settling_time_min": 0.173,
+        "settling_time_max": 1.598,
+        "overshoot_max": 7.031,
+        "steadystate_error_max": 0.01,
+        "metadata": "First order system with delay.",
+        "scenario": "other"
+    },
+    {
+        "id": 2,
+        "num": [
+            10.867
+        ],
+        "den": [
+            1,
+            12.623
+        ],
+        "tau": 0.037,
+        "gain_margin_min": 9.908,
+        "phase_margin_min": 41.517,
+        "settling_time_min": 0.166,
+        "settling_time_max": 1.62,
+        "overshoot_max": 10.403,
+        "steadystate_error_max": 0.01,
+        "metadata": "First order system with delay.",
+        "scenario": "other"
+    },
+    {
+        "id": 3,
+        "num": [
+            9.31
+        ],
+        "den": [
+            1,
+            15.096
+        ],
+        "tau": 0.033,
+        "gain_margin_min": 7.615,
+        "phase_margin_min": 10.5,
+        "settling_time_min": 0.159,
+        "settling_time_max": 1.329,
+        "overshoot_max": 17.745,
+        "steadystate_error_max": 0.01,
+        "metadata": "First order system with delay.",
+        "scenario": "other"
+    },
+    {
+        "id": 4,
+        "num": [
+            16.763
+        ],
+        "den": [
+            1,
+            5.085
+        ],
+        "tau": 0.066,
+        "gain_margin_min": 9.141,
+        "phase_margin_min": 34.049,
+        "settling_time_min": 0.304,
+        "settling_time_max": 2.957,
+        "overshoot_max": 19.698,
+        "steadystate_error_max": 0.01,
+        "metadata": "First order system with delay.",
+        "scenario": "other"
+    },
+    {
+        "id": 5,
+        "num": [
+            16.165
+        ],
+        "den": [
+            1,
+            5.797
+        ],
+        "tau": 0.064,
+        "gain_margin_min": 5.651,
+        "phase_margin_min": 15.059,
+        "settling_time_min": 0.309,
+        "settling_time_max": 2.968,
+        "overshoot_max": 12.32,
+        "steadystate_error_max": 0.01,
+        "metadata": "First order system with delay.",
+        "scenario": "other"
+    },
+    {
+        "id": 6,
+        "num": [
+            15.114
+        ],
+        "den": [
+            1,
+            1.191
+        ],
+        "tau": 0.357,
+        "gain_margin_min": 5.972,
+        "phase_margin_min": 12.441,
+        "settling_time_min": 1.625,
+        "settling_time_max": 16.33,
+        "overshoot_max": 15.84,
+        "steadystate_error_max": 0.01,
+        "metadata": "First order system with delay.",
+        "scenario": "other"
+    },
+    {
+        "id": 7,
+        "num": [
+            7.255
+        ],
+        "den": [
+            1,
+            7.424
+        ],
+        "tau": 0.06,
+        "gain_margin_min": 5.256,
+        "phase_margin_min": 37.169,
+        "settling_time_min": 0.255,
+        "settling_time_max": 2.752,
+        "overshoot_max": 19.326,
+        "steadystate_error_max": 0.01,
+        "metadata": "First order system with delay.",
+        "scenario": "other"
+    },
+    {
+        "id": 8,
+        "num": [
+            15.111
+        ],
+        "den": [
+            1,
+            10.278
+        ],
+        "tau": 0.038,
+        "gain_margin_min": 7.265,
+        "phase_margin_min": 13.754,
+        "settling_time_min": 0.167,
+        "settling_time_max": 1.588,
+        "overshoot_max": 9.147,
+        "steadystate_error_max": 0.01,
+        "metadata": "First order system with delay.",
+        "scenario": "other"
+    },
+    {
+        "id": 9,
+        "num": [
+            13.55
+        ],
+        "den": [
+            1,
+            13.166
+        ],
+        "tau": 0.032,
+        "gain_margin_min": 6.673,
+        "phase_margin_min": 29.317,
+        "settling_time_min": 0.144,
+        "settling_time_max": 1.534,
+        "overshoot_max": 16.078,
+        "steadystate_error_max": 0.01,
+        "metadata": "First order system with delay.",
+        "scenario": "other"
+    },
+    {
+        "id": 10,
+        "num": [
+            1.287
+        ],
+        "den": [
+            1,
+            1.657
+        ],
+        "tau": 0.251,
+        "gain_margin_min": 5.632,
+        "phase_margin_min": 35.771,
+        "settling_time_min": 1.027,
+        "settling_time_max": 11.122,
+        "overshoot_max": 8.217,
+        "steadystate_error_max": 0.01,
+        "metadata": "First order system with delay.",
+        "scenario": "other"
+    },
+    {
+        "id": 11,
+        "num": [
+            6.66
+        ],
+        "den": [
+            1,
+            8.201
+        ],
+        "tau": 0.07,
+        "gain_margin_min": 9.3,
+        "phase_margin_min": 23.635,
+        "settling_time_min": 0.329,
+        "settling_time_max": 3.398,
+        "overshoot_max": 16.82,
+        "steadystate_error_max": 0.01,
+        "metadata": "First order system with delay.",
+        "scenario": "other"
+    },
+    {
+        "id": 12,
+        "num": [
+            6.311
+        ],
+        "den": [
+            1,
+            13.201
+        ],
+        "tau": 0.025,
+        "gain_margin_min": 9.967,
+        "phase_margin_min": 40.052,
+        "settling_time_min": 0.119,
+        "settling_time_max": 1.134,
+        "overshoot_max": 6.505,
+        "steadystate_error_max": 0.01,
+        "metadata": "First order system with delay.",
+        "scenario": "other"
+    },
+    {
+        "id": 13,
+        "num": [
+            13.163
+        ],
+        "den": [
+            1,
+            2.945
+        ],
+        "tau": 0.185,
+        "gain_margin_min": 7.66,
+        "phase_margin_min": 40.645,
+        "settling_time_min": 0.763,
+        "settling_time_max": 8.372,
+        "overshoot_max": 14.38,
+        "steadystate_error_max": 0.01,
+        "metadata": "First order system with delay.",
+        "scenario": "other"
+    },
+    {
+        "id": 14,
+        "num": [
+            0.112
+        ],
+        "den": [
+            1,
+            14.02
+        ],
+        "tau": 0.029,
+        "gain_margin_min": 8.907,
+        "phase_margin_min": 17.501,
+        "settling_time_min": 0.127,
+        "settling_time_max": 1.443,
+        "overshoot_max": 7.788,
+        "steadystate_error_max": 0.01,
+        "metadata": "First order system with delay.",
+        "scenario": "other"
+    },
+    {
+        "id": 15,
+        "num": [
+            17.367
+        ],
+        "den": [
+            1,
+            15.817
+        ],
+        "tau": 0.032,
+        "gain_margin_min": 5.827,
+        "phase_margin_min": 27.94,
+        "settling_time_min": 0.129,
+        "settling_time_max": 1.435,
+        "overshoot_max": 7.249,
+        "steadystate_error_max": 0.01,
+        "metadata": "First order system with delay.",
+        "scenario": "other"
+    },
+    {
+        "id": 16,
+        "num": [
+            13.588
+        ],
+        "den": [
+            1,
+            2.555
+        ],
+        "tau": 0.175,
+        "gain_margin_min": 6.925,
+        "phase_margin_min": 26.761,
+        "settling_time_min": 0.751,
+        "settling_time_max": 8.469,
+        "overshoot_max": 15.592,
+        "steadystate_error_max": 0.01,
+        "metadata": "First order system with delay.",
+        "scenario": "other"
+    },
+    {
+        "id": 17,
+        "num": [
+            16.192
+        ],
+        "den": [
+            1,
+            11.531
+        ],
+        "tau": 0.038,
+        "gain_margin_min": 6.28,
+        "phase_margin_min": 16.116,
+        "settling_time_min": 0.173,
+        "settling_time_max": 1.737,
+        "overshoot_max": 10.788,
+        "steadystate_error_max": 0.01,
+        "metadata": "First order system with delay.",
+        "scenario": "other"
+    },
+    {
+        "id": 18,
+        "num": [
+            4.29
+        ],
+        "den": [
+            1,
+            3.061
+        ],
+        "tau": 0.184,
+        "gain_margin_min": 7.715,
+        "phase_margin_min": 12.413,
+        "settling_time_min": 0.892,
+        "settling_time_max": 8.958,
+        "overshoot_max": 17.387,
+        "steadystate_error_max": 0.01,
+        "metadata": "First order system with delay.",
+        "scenario": "other"
+    },
+    {
+        "id": 19,
+        "num": [
+            7.32
+        ],
+        "den": [
+            1,
+            19.782
+        ],
+        "tau": 0.026,
+        "gain_margin_min": 6.011,
+        "phase_margin_min": 15.083,
+        "settling_time_min": 0.122,
+        "settling_time_max": 1.226,
+        "overshoot_max": 13.492,
+        "steadystate_error_max": 0.01,
+        "metadata": "First order system with delay.",
+        "scenario": "other"
+    },
+    {
+        "id": 20,
+        "num": [
+            17.944
+        ],
+        "den": [
+            1,
+            16.138
+        ],
+        "tau": 0.023,
+        "gain_margin_min": 5.612,
+        "phase_margin_min": 14.03,
+        "settling_time_min": 0.108,
+        "settling_time_max": 0.955,
+        "overshoot_max": 14.808,
+        "steadystate_error_max": 0.01,
+        "metadata": "First order system with delay.",
+        "scenario": "other"
+    },
+    {
+        "id": 21,
+        "num": [
+            19.558
+        ],
+        "den": [
+            1,
+            0.461
+        ],
+        "tau": 1.274,
+        "gain_margin_min": 5.347,
+        "phase_margin_min": 19.044,
+        "settling_time_min": 5.158,
+        "settling_time_max": 55.143,
+        "overshoot_max": 6.121,
+        "steadystate_error_max": 0.01,
+        "metadata": "First order system with delay.",
+        "scenario": "other"
+    },
+    {
+        "id": 22,
+        "num": [
+            2.977
+        ],
+        "den": [
+            1,
+            0.583
+        ],
+        "tau": 0.945,
+        "gain_margin_min": 6.223,
+        "phase_margin_min": 21.284,
+        "settling_time_min": 4.288,
+        "settling_time_max": 41.339,
+        "overshoot_max": 11.608,
+        "steadystate_error_max": 0.01,
+        "metadata": "First order system with delay.",
+        "scenario": "other"
+    },
+    {
+        "id": 23,
+        "num": [
+            1.236
+        ],
+        "den": [
+            1,
+            18.615
+        ],
+        "tau": 0.022,
+        "gain_margin_min": 5.145,
+        "phase_margin_min": 34.797,
+        "settling_time_min": 0.107,
+        "settling_time_max": 0.98,
+        "overshoot_max": 15.624,
+        "steadystate_error_max": 0.01,
+        "metadata": "First order system with delay.",
+        "scenario": "other"
+    },
+    {
+        "id": 24,
+        "num": [
+            3.864
+        ],
+        "den": [
+            1,
+            16.668
+        ],
+        "tau": 0.019,
+        "gain_margin_min": 8.351,
+        "phase_margin_min": 33.944,
+        "settling_time_min": 0.078,
+        "settling_time_max": 0.924,
+        "overshoot_max": 10.013,
+        "steadystate_error_max": 0.01,
+        "metadata": "First order system with delay.",
+        "scenario": "other"
+    },
+    {
+        "id": 25,
+        "num": [
+            15.858
+        ],
+        "den": [
+            1,
+            14.326
+        ],
+        "tau": 0.04,
+        "gain_margin_min": 7.776,
+        "phase_margin_min": 35.952,
+        "settling_time_min": 0.189,
+        "settling_time_max": 1.652,
+        "overshoot_max": 13.076,
+        "steadystate_error_max": 0.01,
+        "metadata": "First order system with delay.",
+        "scenario": "other"
+    },
+    {
+        "id": 26,
+        "num": [
+            13.894
+        ],
+        "den": [
+            1,
+            9.067
+        ],
+        "tau": 0.063,
+        "gain_margin_min": 7.545,
+        "phase_margin_min": 15.604,
+        "settling_time_min": 0.289,
+        "settling_time_max": 2.545,
+        "overshoot_max": 16.065,
+        "steadystate_error_max": 0.01,
+        "metadata": "First order system with delay.",
+        "scenario": "other"
+    },
+    {
+        "id": 27,
+        "num": [
+            12.223
+        ],
+        "den": [
+            1,
+            11.37
+        ],
+        "tau": 0.028,
+        "gain_margin_min": 5.001,
+        "phase_margin_min": 40.348,
+        "settling_time_min": 0.117,
+        "settling_time_max": 1.183,
+        "overshoot_max": 10.638,
+        "steadystate_error_max": 0.01,
+        "metadata": "First order system with delay.",
+        "scenario": "other"
+    },
+    {
+        "id": 28,
+        "num": [
+            0.157
+        ],
+        "den": [
+            1,
+            5.318
+        ],
+        "tau": 0.076,
+        "gain_margin_min": 6.333,
+        "phase_margin_min": 21.95,
+        "settling_time_min": 0.325,
+        "settling_time_max": 3.509,
+        "overshoot_max": 13.894,
+        "steadystate_error_max": 0.01,
+        "metadata": "First order system with delay.",
+        "scenario": "other"
+    },
+    {
+        "id": 29,
+        "num": [
+            1.035
+        ],
+        "den": [
+            1,
+            12.68
+        ],
+        "tau": 0.026,
+        "gain_margin_min": 6.82,
+        "phase_margin_min": 11.616,
+        "settling_time_min": 0.122,
+        "settling_time_max": 1.249,
+        "overshoot_max": 13.354,
+        "steadystate_error_max": 0.01,
+        "metadata": "First order system with delay.",
+        "scenario": "other"
+    },
+    {
+        "id": 30,
+        "num": [
+            17.614
+        ],
+        "den": [
+            1,
+            1.37
+        ],
+        "tau": 0.334,
+        "gain_margin_min": 8.018,
+        "phase_margin_min": 35.866,
+        "settling_time_min": 1.42,
+        "settling_time_max": 16.568,
+        "overshoot_max": 5.271,
+        "steadystate_error_max": 0.01,
+        "metadata": "First order system with delay.",
+        "scenario": "other"
+    },
+    {
+        "id": 31,
+        "num": [
+            13.284
+        ],
+        "den": [
+            1,
+            17.884
+        ],
+        "tau": 0.021,
+        "gain_margin_min": 5.337,
+        "phase_margin_min": 10.829,
+        "settling_time_min": 0.093,
+        "settling_time_max": 0.883,
+        "overshoot_max": 11.347,
+        "steadystate_error_max": 0.01,
+        "metadata": "First order system with delay.",
+        "scenario": "other"
+    },
+    {
+        "id": 32,
+        "num": [
+            4.53
+        ],
+        "den": [
+            1,
+            12.828
+        ],
+        "tau": 0.026,
+        "gain_margin_min": 9.184,
+        "phase_margin_min": 30.779,
+        "settling_time_min": 0.128,
+        "settling_time_max": 1.115,
+        "overshoot_max": 10.859,
+        "steadystate_error_max": 0.01,
+        "metadata": "First order system with delay.",
+        "scenario": "other"
+    },
+    {
+        "id": 33,
+        "num": [
+            8.863
+        ],
+        "den": [
+            1,
+            16.359
+        ],
+        "tau": 0.019,
+        "gain_margin_min": 9.973,
+        "phase_margin_min": 22.313,
+        "settling_time_min": 0.079,
+        "settling_time_max": 0.846,
+        "overshoot_max": 17.289,
+        "steadystate_error_max": 0.01,
+        "metadata": "First order system with delay.",
+        "scenario": "other"
+    },
+    {
+        "id": 34,
+        "num": [
+            14.054
+        ],
+        "den": [
+            1,
+            5.417
+        ],
+        "tau": 0.065,
+        "gain_margin_min": 6.796,
+        "phase_margin_min": 15.401,
+        "settling_time_min": 0.29,
+        "settling_time_max": 2.74,
+        "overshoot_max": 8.588,
+        "steadystate_error_max": 0.01,
+        "metadata": "First order system with delay.",
+        "scenario": "other"
+    },
+    {
+        "id": 35,
+        "num": [
+            4.839
+        ],
+        "den": [
+            1,
+            4.574
+        ],
+        "tau": 0.116,
+        "gain_margin_min": 6.163,
+        "phase_margin_min": 21.104,
+        "settling_time_min": 0.469,
+        "settling_time_max": 5.342,
+        "overshoot_max": 17.035,
+        "steadystate_error_max": 0.01,
+        "metadata": "First order system with delay.",
+        "scenario": "other"
+    },
+    {
+        "id": 36,
+        "num": [
+            10.707
+        ],
+        "den": [
+            1,
+            18.372
+        ],
+        "tau": 0.02,
+        "gain_margin_min": 9.644,
+        "phase_margin_min": 38.807,
+        "settling_time_min": 0.083,
+        "settling_time_max": 0.958,
+        "overshoot_max": 19.496,
+        "steadystate_error_max": 0.01,
+        "metadata": "First order system with delay.",
+        "scenario": "other"
+    },
+    {
+        "id": 37,
+        "num": [
+            11.499
+        ],
+        "den": [
+            1,
+            11.522
+        ],
+        "tau": 0.032,
+        "gain_margin_min": 9.715,
+        "phase_margin_min": 37.882,
+        "settling_time_min": 0.145,
+        "settling_time_max": 1.309,
+        "overshoot_max": 10.213,
+        "steadystate_error_max": 0.01,
+        "metadata": "First order system with delay.",
+        "scenario": "other"
+    },
+    {
+        "id": 38,
+        "num": [
+            19.308
+        ],
+        "den": [
+            1,
+            8.388
+        ],
+        "tau": 0.054,
+        "gain_margin_min": 5.866,
+        "phase_margin_min": 30.171,
+        "settling_time_min": 0.265,
+        "settling_time_max": 2.569,
+        "overshoot_max": 14.428,
+        "steadystate_error_max": 0.01,
+        "metadata": "First order system with delay.",
+        "scenario": "other"
+    },
+    {
+        "id": 39,
+        "num": [
+            11.849
+        ],
+        "den": [
+            1,
+            9.634
+        ],
+        "tau": 0.062,
+        "gain_margin_min": 6.026,
+        "phase_margin_min": 37.6,
+        "settling_time_min": 0.286,
+        "settling_time_max": 3.06,
+        "overshoot_max": 6.684,
+        "steadystate_error_max": 0.01,
+        "metadata": "First order system with delay.",
+        "scenario": "other"
+    },
+    {
+        "id": 40,
+        "num": [
+            1.122
+        ],
+        "den": [
+            1,
+            4.637
+        ],
+        "tau": 0.098,
+        "gain_margin_min": 8.697,
+        "phase_margin_min": 34.673,
+        "settling_time_min": 0.476,
+        "settling_time_max": 4.521,
+        "overshoot_max": 9.444,
+        "steadystate_error_max": 0.01,
+        "metadata": "First order system with delay.",
+        "scenario": "other"
+    },
+    {
+        "id": 41,
+        "num": [
+            6.241
+        ],
+        "den": [
+            1,
+            19.431
+        ],
+        "tau": 0.029,
+        "gain_margin_min": 6.417,
+        "phase_margin_min": 44.04,
+        "settling_time_min": 0.139,
+        "settling_time_max": 1.421,
+        "overshoot_max": 6.387,
+        "steadystate_error_max": 0.01,
+        "metadata": "First order system with delay.",
+        "scenario": "other"
+    },
+    {
+        "id": 42,
+        "num": [
+            19.984
+        ],
+        "den": [
+            1,
+            8.392
+        ],
+        "tau": 0.07,
+        "gain_margin_min": 7.087,
+        "phase_margin_min": 35.233,
+        "settling_time_min": 0.347,
+        "settling_time_max": 2.811,
+        "overshoot_max": 8.602,
+        "steadystate_error_max": 0.01,
+        "metadata": "First order system with delay.",
+        "scenario": "other"
+    },
+    {
+        "id": 43,
+        "num": [
+            8.785
+        ],
+        "den": [
+            1,
+            4.0
+        ],
+        "tau": 0.144,
+        "gain_margin_min": 8.065,
+        "phase_margin_min": 44.061,
+        "settling_time_min": 0.629,
+        "settling_time_max": 6.677,
+        "overshoot_max": 16.529,
+        "steadystate_error_max": 0.01,
+        "metadata": "First order system with delay.",
+        "scenario": "other"
+    },
+    {
+        "id": 44,
+        "num": [
+            7.988
+        ],
+        "den": [
+            1,
+            1.924
+        ],
+        "tau": 0.197,
+        "gain_margin_min": 5.655,
+        "phase_margin_min": 18.156,
+        "settling_time_min": 0.91,
+        "settling_time_max": 9.281,
+        "overshoot_max": 8.966,
+        "steadystate_error_max": 0.01,
+        "metadata": "First order system with delay.",
+        "scenario": "other"
+    },
+    {
+        "id": 45,
+        "num": [
+            12.955
+        ],
+        "den": [
+            1,
+            8.741
+        ],
+        "tau": 0.064,
+        "gain_margin_min": 5.206,
+        "phase_margin_min": 12.914,
+        "settling_time_min": 0.315,
+        "settling_time_max": 3.131,
+        "overshoot_max": 16.019,
+        "steadystate_error_max": 0.01,
+        "metadata": "First order system with delay.",
+        "scenario": "other"
+    },
+    {
+        "id": 46,
+        "num": [
+            18.348
+        ],
+        "den": [
+            1,
+            19.36
+        ],
+        "tau": 0.02,
+        "gain_margin_min": 8.741,
+        "phase_margin_min": 19.185,
+        "settling_time_min": 0.082,
+        "settling_time_max": 0.803,
+        "overshoot_max": 16.964,
+        "steadystate_error_max": 0.01,
+        "metadata": "First order system with delay.",
+        "scenario": "other"
+    },
+    {
+        "id": 47,
+        "num": [
+            4.575
+        ],
+        "den": [
+            1,
+            19.04
+        ],
+        "tau": 0.026,
+        "gain_margin_min": 5.628,
+        "phase_margin_min": 11.231,
+        "settling_time_min": 0.114,
+        "settling_time_max": 1.126,
+        "overshoot_max": 15.501,
+        "steadystate_error_max": 0.01,
+        "metadata": "First order system with delay.",
+        "scenario": "other"
+    },
+    {
+        "id": 48,
+        "num": [
+            6.359
+        ],
+        "den": [
+            1,
+            7.543
+        ],
+        "tau": 0.063,
+        "gain_margin_min": 5.706,
+        "phase_margin_min": 34.029,
+        "settling_time_min": 0.264,
+        "settling_time_max": 2.878,
+        "overshoot_max": 5.272,
+        "steadystate_error_max": 0.01,
+        "metadata": "First order system with delay.",
+        "scenario": "other"
+    },
+    {
+        "id": 49,
+        "num": [
+            13.684
+        ],
+        "den": [
+            1,
+            10.564
+        ],
+        "tau": 0.031,
+        "gain_margin_min": 9.104,
+        "phase_margin_min": 30.65,
+        "settling_time_min": 0.142,
+        "settling_time_max": 1.361,
+        "overshoot_max": 13.21,
+        "steadystate_error_max": 0.01,
+        "metadata": "First order system with delay.",
+        "scenario": "other"
+    }
+]

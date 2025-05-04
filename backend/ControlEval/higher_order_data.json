@@ -1,0 +1,1058 @@
+[
+    {
+        "id": 0,
+        "num": [
+            1125
+        ],
+        "den": [
+            1,
+            84.2,
+            1845,
+            7020,
+            13500
+        ],
+        "gain_margin_min": 8.62870302276917,
+        "phase_margin_min": 55.54215764094216,
+        "settling_time_min": 0.4778155924598053,
+        "settling_time_max": 4.12640213624652,
+        "overshoot_max": 12.66329445944194,
+        "steadystate_error_max": 0.0001,
+        "metadata": "Fourth order system with response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 1,
+        "num": [
+            225
+        ],
+        "den": [
+            1,
+            54.2,
+            219,
+            450
+        ],
+        "gain_margin_min": 2.62870302276917,
+        "phase_margin_min": 56.54215764094216,
+        "settling_time_min": 0.04778155924598053,
+        "settling_time_max": 3.640213624652,
+        "overshoot_max": 10.66329445944194,
+        "steadystate_error_max": 0.0001,
+        "metadata": "Third order system with response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 2,
+        "num": [
+            225
+        ],
+        "den": [
+            1,
+            54.2,
+            214,
+            200
+        ],
+        "gain_margin_min": 5.62870302276917,
+        "phase_margin_min": 65.54215764094216,
+        "settling_time_min": 0.4778155924598053,
+        "settling_time_max": 9.140213624652,
+        "overshoot_max": 2.66329445944194,
+        "steadystate_error_max": 0.0001,
+        "metadata": "Third order system with response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 3,
+        "num": [
+            225
+        ],
+        "den": [
+            1,
+            14.2,
+            46,
+            40
+        ],
+        "gain_margin_min": 2.62870302276917,
+        "phase_margin_min": 62.54215764094216,
+        "settling_time_min": 1.0477815592459805,
+        "settling_time_max": 8.40213624652,
+        "overshoot_max": 2.66329445944194,
+        "steadystate_error_max": 0.0001,
+        "metadata": "Third order system with response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 4,
+        "num": [
+            50,
+            675
+        ],
+        "den": [
+            1,
+            14.2,
+            46,
+            40
+        ],
+        "gain_margin_min": 7.62870302276917,
+        "phase_margin_min": 60.94216,
+        "settling_time_min": 0.9078155924598053,
+        "settling_time_max": 10.140213624652,
+        "overshoot_max": 1.66329445944194,
+        "steadystate_error_max": 0.0001,
+        "metadata": "Third order system with response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 5,
+        "num": [
+            10,
+            45
+        ],
+        "den": [
+            1,
+            13.6,
+            40,
+            40
+        ],
+        "gain_margin_min": 6.62870302276917,
+        "phase_margin_min": 54.94216,
+        "settling_time_min": 0.5078155924598053,
+        "settling_time_max": 6.840213624652,
+        "overshoot_max": 1.66329445944194,
+        "steadystate_error_max": 0.0001,
+        "metadata": "Third order system with response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 6,
+        "num": [
+            100,
+            450
+        ],
+        "den": [
+            1,
+            28.6,
+            194,
+            460,
+            400
+        ],
+        "gain_margin_min": 2.62870302276917,
+        "phase_margin_min": 52.94216,
+        "settling_time_min": 0.1078155924598053,
+        "settling_time_max": 7.840213624652,
+        "overshoot_max": 12.66329445944194,
+        "steadystate_error_max": 0.0001,
+        "metadata": "Fourth order system with response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 7,
+        "num": [
+            100,
+            200,
+            450
+        ],
+        "den": [
+            1,
+            33.6,
+            288,
+            753.6,
+            704
+        ],
+        "gain_margin_min": 50.62870302276917,
+        "phase_margin_min": 65.94216,
+        "settling_time_min": 0.6078155924598053,
+        "settling_time_max": 8.840213624652,
+        "overshoot_max": 12.66329445944194,
+        "steadystate_error_max": 0.0001,
+        "metadata": "Fourth order system with response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 8,
+        "num": [
+            1,
+            1,
+            2,
+            4.5
+        ],
+        "den": [
+            1,
+            10.8,
+            38.92,
+            61.2,
+            36
+        ],
+        "gain_margin_min": 2.62870302276917,
+        "phase_margin_min": 55.94216,
+        "settling_time_min": 0.6078155924598053,
+        "settling_time_max": 10.840213624652,
+        "overshoot_max": 10.29445944194,
+        "steadystate_error_max": 0.0001,
+        "metadata": "Fourth order system with response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 9,
+        "num": [
+            1,
+            2,
+            4.5
+        ],
+        "den": [
+            1,
+            10.8,
+            59.92,
+            212.4,
+            225
+        ],
+        "gain_margin_min": 7.62870302276917,
+        "phase_margin_min": 70.94216,
+        "settling_time_min": 0.6078155924598053,
+        "settling_time_max": 9.240213624652,
+        "overshoot_max": 3.29445944194,
+        "steadystate_error_max": 0.0001,
+        "metadata": "Fourth order system with response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 10,
+        "num": [
+            10,
+            20,
+            45
+        ],
+        "den": [
+            1,
+            40.8,
+            383.92,
+            2010,
+            6597,
+            6750
+        ],
+        "gain_margin_min": 7.2870302276917,
+        "phase_margin_min": 67.94216,
+        "settling_time_min": 0.06078155924598053,
+        "settling_time_max": 8.240213624652,
+        "overshoot_max": 3.29445944194,
+        "steadystate_error_max": 0.0001,
+        "metadata": "Fifth order system with response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 11,
+        "num": [
+            10,
+            40,
+            85,
+            90
+        ],
+        "den": [
+            1,
+            60.8,
+            599.92,
+            3208,
+            10845,
+            11250
+        ],
+        "gain_margin_min": 25.2870302276917,
+        "phase_margin_min": 75.0094216,
+        "settling_time_min": 0.06078155924598053,
+        "settling_time_max": 11.40213624652,
+        "overshoot_max": 3.29445944194,
+        "steadystate_error_max": 0.0001,
+        "metadata": "Fifth order system with response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 12,
+        "num": [
+            10,
+            70,
+            165,
+            135
+        ],
+        "den": [
+            1,
+            50.8,
+            491.92,
+            2609,
+            8721,
+            9000
+        ],
+        "gain_margin_min": 15.870302276917,
+        "phase_margin_min": 70.0094216,
+        "settling_time_min": 0.006078155924598053,
+        "settling_time_max": 13.40213624652,
+        "overshoot_max": 3.29445944194,
+        "steadystate_error_max": 0.0001,
+        "metadata": "Fifth order system with response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 13,
+        "num": [
+            10,
+            40,
+            75,
+            135
+        ],
+        "den": [
+            1,
+            56.2,
+            727.36,
+            3521.8,
+            14121,
+            9000
+        ],
+        "gain_margin_min": 40.870302276917,
+        "phase_margin_min": 60.0094216,
+        "settling_time_min": 0.01078155924598053,
+        "settling_time_max": 12.40213624652,
+        "overshoot_max": 6.29445944194,
+        "steadystate_error_max": 0.0001,
+        "metadata": "Fifth order system with response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 14,
+        "num": [
+            225
+        ],
+        "den": [
+            1,
+            54.2,
+            219,
+            450
+        ],
+        "gain_margin_min": 2.870302276917,
+        "phase_margin_min": 50.0094216,
+        "settling_time_min": 0.001078155924598053,
+        "settling_time_max": 2.40213624652,
+        "overshoot_max": 6.29445944194,
+        "steadystate_error_max": 0.0001,
+        "metadata": "Third order system with response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 15,
+        "num": [
+            30,
+            135
+        ],
+        "den": [
+            1,
+            14.2,
+            58,
+            160
+        ],
+        "gain_margin_min": 5.870302276917,
+        "phase_margin_min": 65.0094216,
+        "settling_time_min": 0.03078155924598053,
+        "settling_time_max": 7.40213624652,
+        "overshoot_max": 2.29445944194,
+        "steadystate_error_max": 0.0001,
+        "metadata": "Third order system with response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 16,
+        "num": [
+            10,
+            10,
+            45
+        ],
+        "den": [
+            1,
+            43.6,
+            169,
+            1000
+        ],
+        "gain_margin_min": 15.870302276917,
+        "phase_margin_min": 60.0094216,
+        "settling_time_min": 0.03078155924598053,
+        "settling_time_max": 10.40213624652,
+        "overshoot_max": 4.29445944194,
+        "steadystate_error_max": 0.0001,
+        "metadata": "Third order system with response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 17,
+        "num": [
+            10,
+            10,
+            45
+        ],
+        "den": [
+            1,
+            7.6,
+            39.4,
+            100
+        ],
+        "gain_margin_min": 25.870302276917,
+        "phase_margin_min": 60.0094216,
+        "settling_time_min": 0.03078155924598053,
+        "settling_time_max": 9.90213624652,
+        "overshoot_max": 4.29445944194,
+        "steadystate_error_max": 0.0001,
+        "metadata": "Third order system with response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 18,
+        "num": [
+            10,
+            10,
+            45
+        ],
+        "den": [
+            1,
+            9.6,
+            30.4,
+            225
+        ],
+        "gain_margin_min": 20.870302276917,
+        "phase_margin_min": 30.0094216,
+        "settling_time_min": 0.03078155924598053,
+        "settling_time_max": 4.90213624652,
+        "overshoot_max": 4.29445944194,
+        "steadystate_error_max": 0.0001,
+        "metadata": "Third order system with response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 19,
+        "num": [
+            45
+        ],
+        "den": [
+            1,
+            14.4,
+            52.6,
+            36
+        ],
+        "gain_margin_min": 2.870302276917,
+        "phase_margin_min": 42.0094216,
+        "settling_time_min": 0.03078155924598053,
+        "settling_time_max": 13.90213624652,
+        "overshoot_max": 4.29445944194,
+        "steadystate_error_max": 0.0001,
+        "metadata": "Third order system with response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 20,
+        "num": [
+            45
+        ],
+        "den": [
+            1,
+            8.4,
+            101.2,
+            449.4,
+            324
+        ],
+        "gain_margin_min": 5.870302276917,
+        "phase_margin_min": 45.0094216,
+        "settling_time_min": 0.03078155924598053,
+        "settling_time_max": 12.90213624652,
+        "overshoot_max": 4.29445944194,
+        "steadystate_error_max": 0.0001,
+        "metadata": "Fourth order system with response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 21,
+        "num": [
+            10
+        ],
+        "den": [
+            1,
+            86.4,
+            441.4,
+            324
+        ],
+        "gain_margin_min": 4.870302276917,
+        "phase_margin_min": 50.0094216,
+        "settling_time_min": 0.03078155924598053,
+        "settling_time_max": 10.0213624652,
+        "overshoot_max": 15.29445944194,
+        "steadystate_error_max": 0.0001,
+        "metadata": "Third order system with response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 22,
+        "num": [
+            10,
+            100
+        ],
+        "den": [
+            1,
+            85.8,
+            392.8,
+            324
+        ],
+        "gain_margin_min": 8.870302276917,
+        "phase_margin_min": 55.0094216,
+        "settling_time_min": 0.03078155924598053,
+        "settling_time_max": 10.213624652,
+        "overshoot_max": 10.29445944194,
+        "steadystate_error_max": 0.0001,
+        "metadata": "Third order system with response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 23,
+        "num": [
+            10,
+            100
+        ],
+        "den": [
+            1,
+            85.8,
+            392.8,
+            324
+        ],
+        "gain_margin_min": 8.870302276917,
+        "phase_margin_min": 55.0094216,
+        "settling_time_min": 0.03078155924598053,
+        "settling_time_max": 10.213624652,
+        "overshoot_max": 10.29445944194,
+        "steadystate_error_max": 0.0001,
+        "metadata": "Third order system with response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 24,
+        "num": [
+            10,
+            100
+        ],
+        "den": [
+            1,
+            4.9,
+            85.48,
+            389.2,
+            324
+        ],
+        "gain_margin_min": 10.870302276917,
+        "phase_margin_min": 58.0094216,
+        "settling_time_min": 0.03078155924598053,
+        "settling_time_max": 9.213624652,
+        "overshoot_max": 12.29445944194,
+        "steadystate_error_max": 0.0001,
+        "metadata": "Fourth order system with response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 25,
+        "num": [
+            16.272325810243217
+        ],
+        "den": [
+            1,
+            199.5630323798808,
+            88943.7426321395,
+            -367793.3868255715
+        ],
+        "gain_margin_min": 6.162214767820755,
+        "phase_margin_min": 80.83554946277624,
+        "settling_time_min": 0.19480319196567863,
+        "settling_time_max": 1.8516051311613952,
+        "overshoot_max": 10.962815381051826,
+        "steadystate_error_max": 0.0001,
+        "metadata": "Third order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 26,
+        "num": [
+            11.845906615195586
+        ],
+        "den": [
+            1,
+            238.75265826337844,
+            79170.72533054325,
+            -1446864.9540486075
+        ],
+        "gain_margin_min": 7.233460309611162,
+        "phase_margin_min": 68.98194558247454,
+        "settling_time_min": 0.046507934292956604,
+        "settling_time_max": 0.4703413329054176,
+        "overshoot_max": 5.598690529793514,
+        "steadystate_error_max": 0.0001,
+        "metadata": "Third order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 27,
+        "num": [
+            3.241657204494175
+        ],
+        "den": [
+            1,
+            239.55083121072317,
+            83213.71424279522,
+            -103634.63410124906
+        ],
+        "gain_margin_min": 7.631532950204818,
+        "phase_margin_min": 89.84786314109925,
+        "settling_time_min": 0.8596965089127172,
+        "settling_time_max": 5.618607144627057,
+        "overshoot_max": 11.861095824112489,
+        "steadystate_error_max": 0.0001,
+        "metadata": "Third order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 28,
+        "num": [
+            8.99464437711115
+        ],
+        "den": [
+            1,
+            403.4470287940272,
+            81438.63917194455,
+            -1131551.498330009
+        ],
+        "gain_margin_min": 8.935387125277803,
+        "phase_margin_min": 67.6782618961646,
+        "settling_time_min": 0.09241977587925448,
+        "settling_time_max": 0.5102465920440287,
+        "overshoot_max": 14.778607770875547,
+        "steadystate_error_max": 0.0001,
+        "metadata": "Third order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 29,
+        "num": [
+            2.811522939927506
+        ],
+        "den": [
+            1,
+            376.35277872154563,
+            38553.63887197997,
+            -186796.18544042896
+        ],
+        "gain_margin_min": 9.307512693144027,
+        "phase_margin_min": 47.324221956914606,
+        "settling_time_min": 0.0730975685307896,
+        "settling_time_max": 1.177786740635929,
+        "overshoot_max": 10.079210889295396,
+        "steadystate_error_max": 0.0001,
+        "metadata": "Third order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 30,
+        "num": [
+            3.112197486201553
+        ],
+        "den": [
+            1,
+            447.0940703444551,
+            61592.73625208091,
+            -1285642.4182763775
+        ],
+        "gain_margin_min": 9.847919934588354,
+        "phase_margin_min": 72.34856035644513,
+        "settling_time_min": 0.053311619216582985,
+        "settling_time_max": 0.4878577179737317,
+        "overshoot_max": 11.86217092062283,
+        "steadystate_error_max": 0.0001,
+        "metadata": "Third order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 31,
+        "num": [
+            15.73699279935474
+        ],
+        "den": [
+            1,
+            308.6416538570542,
+            73106.81714670076,
+            -331318.44089900935
+        ],
+        "gain_margin_min": 6.19987636239465,
+        "phase_margin_min": 77.67818665231877,
+        "settling_time_min": 0.10448142426130995,
+        "settling_time_max": 1.8118505171717945,
+        "overshoot_max": 16.685712182241893,
+        "steadystate_error_max": 0.0001,
+        "metadata": "Third order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 32,
+        "num": [
+            11.454884640807192
+        ],
+        "den": [
+            1,
+            193.22918874343662,
+            81653.1557731338,
+            -1070667.3245319158
+        ],
+        "gain_margin_min": 6.599218197044348,
+        "phase_margin_min": 85.57695417611781,
+        "settling_time_min": 0.11650272303607671,
+        "settling_time_max": 0.3840496852076072,
+        "overshoot_max": 12.56108530145132,
+        "steadystate_error_max": 0.0001,
+        "metadata": "Third order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 33,
+        "num": [
+            2.174990262201689
+        ],
+        "den": [
+            1,
+            432.73917123915965,
+            61790.524386045865,
+            -744913.2224591208
+        ],
+        "gain_margin_min": 9.760458447920975,
+        "phase_margin_min": 77.2107999908716,
+        "settling_time_min": 0.03548253373335797,
+        "settling_time_max": 0.6950194600614001,
+        "overshoot_max": 19.83386055692739,
+        "steadystate_error_max": 0.0001,
+        "metadata": "Third order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 34,
+        "num": [
+            5.776568718654286
+        ],
+        "den": [
+            1,
+            331.3799548052221,
+            63704.46089006954,
+            -1200401.2694635473
+        ],
+        "gain_margin_min": 7.147119377015871,
+        "phase_margin_min": 46.05605563211962,
+        "settling_time_min": 0.05399418242993996,
+        "settling_time_max": 0.35861461543723366,
+        "overshoot_max": 18.67072381662688,
+        "steadystate_error_max": 0.0001,
+        "metadata": "Third order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 35,
+        "num": [
+            11.802030353432615
+        ],
+        "den": [
+            1,
+            112.80387632244339,
+            -92.76469031471396,
+            708.2364609184342
+        ],
+        "gain_margin_min": 9.64267507892323,
+        "phase_margin_min": 45.6901131512152,
+        "settling_time_min": 11.179491581112456,
+        "settling_time_max": 28.94487811941245,
+        "overshoot_max": 6.0451040202557635,
+        "steadystate_error_max": 0.0001,
+        "metadata": "Third order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 36,
+        "num": [
+            1.0745082026218225
+        ],
+        "den": [
+            1,
+            161.92828709061368,
+            -104.44207699407742,
+            33.5502432847659
+        ],
+        "gain_margin_min": 6.820988201319755,
+        "phase_margin_min": 56.53040427526016,
+        "settling_time_min": 24.209322595045165,
+        "settling_time_max": 44.41632279373389,
+        "overshoot_max": 16.543476854530496,
+        "steadystate_error_max": 0.0001,
+        "metadata": "Third order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 37,
+        "num": [
+            4.145825154876584
+        ],
+        "den": [
+            1,
+            120.47337605098794,
+            -959.3440512498836,
+            3050.1430905899783
+        ],
+        "gain_margin_min": 6.254748435335236,
+        "phase_margin_min": 52.44895587507733,
+        "settling_time_min": 1.7010789477277661,
+        "settling_time_max": 3.999184417809399,
+        "overshoot_max": 10.931369694105584,
+        "steadystate_error_max": 0.0001,
+        "metadata": "Third order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 38,
+        "num": [
+            5.172085905210931
+        ],
+        "den": [
+            1,
+            101.38913090105645,
+            -360.1651350453766,
+            485.8829058427689
+        ],
+        "gain_margin_min": 5.284805881738124,
+        "phase_margin_min": 47.9421079369642,
+        "settling_time_min": 3.039811589435291,
+        "settling_time_max": 7.689614978417332,
+        "overshoot_max": 10.985459617679204,
+        "steadystate_error_max": 0.0001,
+        "metadata": "Third order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 39,
+        "num": [
+            14.4898873620172
+        ],
+        "den": [
+            1,
+            167.82933019199308,
+            -418.753430501405,
+            953.2755563849989
+        ],
+        "gain_margin_min": 7.364473753071765,
+        "phase_margin_min": 59.35320067895755,
+        "settling_time_min": 5.264021731916102,
+        "settling_time_max": 10.540254527157947,
+        "overshoot_max": 12.934850088585524,
+        "steadystate_error_max": 0.0001,
+        "metadata": "Third order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 40,
+        "num": [
+            6.619909200003848
+        ],
+        "den": [
+            1,
+            115.22679395184423,
+            -239.17265214135227,
+            458.7821891346974
+        ],
+        "gain_margin_min": 9.355733648485707,
+        "phase_margin_min": 59.553817228972726,
+        "settling_time_min": 5.558418914167143,
+        "settling_time_max": 12.949852470844759,
+        "overshoot_max": 19.884078910647975,
+        "steadystate_error_max": 0.0001,
+        "metadata": "Third order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 41,
+        "num": [
+            8.439884774839957
+        ],
+        "den": [
+            1,
+            138.55264433404284,
+            -60.700944549056125,
+            22.28895981779707
+        ],
+        "gain_margin_min": 7.423929804962201,
+        "phase_margin_min": 70.28758786341585,
+        "settling_time_min": 32.09817505923112,
+        "settling_time_max": 55.82599685036765,
+        "overshoot_max": 19.408208302129875,
+        "steadystate_error_max": 0.0001,
+        "metadata": "Third order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 42,
+        "num": [
+            15.77853817349982
+        ],
+        "den": [
+            1,
+            188.33950781050305,
+            -61.896086346282615,
+            48.457656610335675
+        ],
+        "gain_margin_min": 8.670942788857355,
+        "phase_margin_min": 65.55223927853642,
+        "settling_time_min": 34.682971594995266,
+        "settling_time_max": 94.55175866788143,
+        "overshoot_max": 12.599380822176236,
+        "steadystate_error_max": 0.0001,
+        "metadata": "Third order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 43,
+        "num": [
+            12.206733841090147
+        ],
+        "den": [
+            1,
+            183.12465733415306,
+            -182.03706450820604,
+            86.6466915311823
+        ],
+        "gain_margin_min": 9.202334541030066,
+        "phase_margin_min": 58.651485387848076,
+        "settling_time_min": 14.435268945802129,
+        "settling_time_max": 29.62840431028178,
+        "overshoot_max": 15.239536776552702,
+        "steadystate_error_max": 0.0001,
+        "metadata": "Third order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 44,
+        "num": [
+            16.76055117497709
+        ],
+        "den": [
+            1,
+            189.08492575735434,
+            -151.72867187088337,
+            249.49435967565313
+        ],
+        "gain_margin_min": 7.988658562806961,
+        "phase_margin_min": 53.93420101346001,
+        "settling_time_min": 19.705944554929445,
+        "settling_time_max": 39.335498591900695,
+        "overshoot_max": 13.624152170131664,
+        "steadystate_error_max": 0.0001,
+        "metadata": "Third order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 45,
+        "num": [
+            2311.8347248513264
+        ],
+        "den": [
+            1,
+            19.452199178921468,
+            523.243494598562,
+            9861.9845778548,
+            0,
+            0
+        ],
+        "gain_margin_min": 5.746415651850559,
+        "phase_margin_min": 48.1072860313295,
+        "settling_time_min": 3.2165320876862755,
+        "settling_time_max": 14.885740515193206,
+        "overshoot_max": 12.371760575350372,
+        "steadystate_error_max": 0.0001,
+        "metadata": "Fifth order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 46,
+        "num": [
+            2279.2734685893483
+        ],
+        "den": [
+            1,
+            20.16206583501943,
+            598.6940876943431,
+            11696.564507324798,
+            0,
+            0
+        ],
+        "gain_margin_min": 5.4348546129125515,
+        "phase_margin_min": 48.829991080071125,
+        "settling_time_min": 3.01340271388262,
+        "settling_time_max": 10.470727756803203,
+        "overshoot_max": 17.869589738246425,
+        "steadystate_error_max": 0.0001,
+        "metadata": "Fifth order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 47,
+        "num": [
+            2637.5358858888408
+        ],
+        "den": [
+            1,
+            17.332135460800846,
+            570.4733069817328,
+            9703.927214880196,
+            0,
+            0
+        ],
+        "gain_margin_min": 5.971056527866241,
+        "phase_margin_min": 45.81417410954991,
+        "settling_time_min": 2.359148775624764,
+        "settling_time_max": 11.508296210262017,
+        "overshoot_max": 12.773114066063133,
+        "steadystate_error_max": 0.0001,
+        "metadata": "Fifth order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 48,
+        "num": [
+            2679.349038895542
+        ],
+        "den": [
+            1,
+            16.991169671410404,
+            543.073880686381,
+            9186.127711523495,
+            0,
+            0
+        ],
+        "gain_margin_min": 8.223078713661838,
+        "phase_margin_min": 49.316772758018814,
+        "settling_time_min": 5.343053738957941,
+        "settling_time_max": 22.08485443735361,
+        "overshoot_max": 17.174311636583216,
+        "steadystate_error_max": 0.0001,
+        "metadata": "Fifth order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 49,
+        "num": [
+            2624.251624579072
+        ],
+        "den": [
+            1,
+            17.157056687828355,
+            498.0342955703312,
+            8433.214653701794,
+            0,
+            0
+        ],
+        "gain_margin_min": 8.483381245257952,
+        "phase_margin_min": 49.60750255309095,
+        "settling_time_min": 2.849451568302206,
+        "settling_time_max": 18.0717821960974,
+        "overshoot_max": 7.371619971566476,
+        "steadystate_error_max": 0.0001,
+        "metadata": "Fifth order system with different response speed requirements.",
+        "scenario": "other"
+    }
+]

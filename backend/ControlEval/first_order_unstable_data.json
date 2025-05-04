@@ -1,0 +1,902 @@
+[
+    {
+        "id": 0,
+        "num": [
+            16.38835882275594
+        ],
+        "den": [
+            1,
+            -7.077555008934944
+        ],
+        "gain_margin_min": 7.227826299055553,
+        "phase_margin_min": 62.146109994238515,
+        "settling_time_min": 0.00039706830205640223,
+        "settling_time_max": 0.1722285487055076,
+        "overshoot_max": 19.511274993908025,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 1,
+        "num": [
+            14.757425739893703
+        ],
+        "den": [
+            1,
+            -4.4168913946649795
+        ],
+        "gain_margin_min": 9.927900074158272,
+        "phase_margin_min": 79.06619614373045,
+        "settling_time_min": 0.0006007034121963408,
+        "settling_time_max": 0.26989367264527747,
+        "overshoot_max": 6.316019657257552,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 2,
+        "num": [
+            17.92266354246514
+        ],
+        "den": [
+            1,
+            -19.946357628957735
+        ],
+        "gain_margin_min": 5.198259213253956,
+        "phase_margin_min": 69.88329493143932,
+        "settling_time_min": 6.280428449228227e-05,
+        "settling_time_max": 0.06551989822462717,
+        "overshoot_max": 12.054418603854856,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 3,
+        "num": [
+            6.643292098345088
+        ],
+        "den": [
+            1,
+            -19.306398764258542
+        ],
+        "gain_margin_min": 6.357928700588724,
+        "phase_margin_min": 69.11720579348315,
+        "settling_time_min": 0.00010746440886182484,
+        "settling_time_max": 0.07054090854607252,
+        "overshoot_max": 16.557959683820542,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 4,
+        "num": [
+            1.8896159106391597
+        ],
+        "den": [
+            1,
+            -10.374074017613722
+        ],
+        "gain_margin_min": 6.667979259209968,
+        "phase_margin_min": 50.48107742670109,
+        "settling_time_min": 0.00025682008628703166,
+        "settling_time_max": 0.14291185703091527,
+        "overshoot_max": 5.2516317041820795,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 5,
+        "num": [
+            16.84530951801202
+        ],
+        "den": [
+            1,
+            -15.49014200200162
+        ],
+        "gain_margin_min": 6.69501433299527,
+        "phase_margin_min": 47.94561824603873,
+        "settling_time_min": 2.1568626535472708e-05,
+        "settling_time_max": 0.06057824810985196,
+        "overshoot_max": 14.55877960801512,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 6,
+        "num": [
+            15.763366572253425
+        ],
+        "den": [
+            1,
+            -5.885337988269539
+        ],
+        "gain_margin_min": 9.730018961771503,
+        "phase_margin_min": 75.2131394077584,
+        "settling_time_min": 0.00020999554314525114,
+        "settling_time_max": 0.16391524214706732,
+        "overshoot_max": 16.34505700455135,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 7,
+        "num": [
+            7.0603169203235465
+        ],
+        "den": [
+            1,
+            -16.039660522205374
+        ],
+        "gain_margin_min": 9.029431747117213,
+        "phase_margin_min": 51.00400220911455,
+        "settling_time_min": 2.808340405424163e-05,
+        "settling_time_max": 0.07911211936836299,
+        "overshoot_max": 12.039423496750466,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 8,
+        "num": [
+            17.300517315592778
+        ],
+        "den": [
+            1,
+            -2.4487123934522703
+        ],
+        "gain_margin_min": 7.62371315947344,
+        "phase_margin_min": 63.44048012203021,
+        "settling_time_min": 0.0011177345101946211,
+        "settling_time_max": 0.5579913157008742,
+        "overshoot_max": 16.9873847802982,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 9,
+        "num": [
+            9.135215619066829
+        ],
+        "den": [
+            1,
+            -17.716956296431693
+        ],
+        "gain_margin_min": 6.111676180024853,
+        "phase_margin_min": 69.55203293821434,
+        "settling_time_min": 2.9114628979160967e-05,
+        "settling_time_max": 0.05587627378359615,
+        "overshoot_max": 13.851848994916178,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 10,
+        "num": [
+            19.941732049159384
+        ],
+        "den": [
+            1,
+            -5.256971224319114
+        ],
+        "gain_margin_min": 7.998960787226812,
+        "phase_margin_min": 61.207059230940146,
+        "settling_time_min": 0.0003889068354332276,
+        "settling_time_max": 0.26181526499176316,
+        "overshoot_max": 16.38128886872231,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 11,
+        "num": [
+            2.2485587755958982
+        ],
+        "den": [
+            1,
+            -5.969961058766811
+        ],
+        "gain_margin_min": 6.680863670295381,
+        "phase_margin_min": 80.60293696060484,
+        "settling_time_min": 0.00038919820106276274,
+        "settling_time_max": 0.17976000022931188,
+        "overshoot_max": 12.329638834040455,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 12,
+        "num": [
+            14.631786146804426
+        ],
+        "den": [
+            1,
+            -9.328108358646022
+        ],
+        "gain_margin_min": 9.598058816938632,
+        "phase_margin_min": 54.79564652741582,
+        "settling_time_min": 8.935511297077622e-05,
+        "settling_time_max": 0.10341571562842578,
+        "overshoot_max": 15.613679178486352,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 13,
+        "num": [
+            1.810498014345554
+        ],
+        "den": [
+            1,
+            -3.812430404666598
+        ],
+        "gain_margin_min": 9.066363221375852,
+        "phase_margin_min": 75.07099819822548,
+        "settling_time_min": 0.0007697471852841669,
+        "settling_time_max": 0.2411687981951534,
+        "overshoot_max": 10.558417590005082,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 14,
+        "num": [
+            6.861743258200789
+        ],
+        "den": [
+            1,
+            -9.68744699573438
+        ],
+        "gain_margin_min": 9.812762436154564,
+        "phase_margin_min": 73.88007242281193,
+        "settling_time_min": 0.0002161676060301605,
+        "settling_time_max": 0.1443703143568307,
+        "overshoot_max": 12.445779702585387,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 15,
+        "num": [
+            14.091828540446228
+        ],
+        "den": [
+            1,
+            -11.019376111466144
+        ],
+        "gain_margin_min": 5.613898648216536,
+        "phase_margin_min": 61.616123490184734,
+        "settling_time_min": 0.0002544810791817994,
+        "settling_time_max": 0.12940311323969245,
+        "overshoot_max": 16.61025180209521,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 16,
+        "num": [
+            4.805007576588654
+        ],
+        "den": [
+            1,
+            -15.640922351909332
+        ],
+        "gain_margin_min": 9.846831622835358,
+        "phase_margin_min": 70.26390830635374,
+        "settling_time_min": 6.092023112277371e-05,
+        "settling_time_max": 0.08058481943364451,
+        "overshoot_max": 5.4658168901984086,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 17,
+        "num": [
+            10.270128563372225
+        ],
+        "den": [
+            1,
+            -17.035469737092846
+        ],
+        "gain_margin_min": 9.366746605799548,
+        "phase_margin_min": 75.52483118436946,
+        "settling_time_min": 9.628068294438155e-06,
+        "settling_time_max": 0.07126311589136144,
+        "overshoot_max": 17.916344778380534,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 18,
+        "num": [
+            2.453204014456355
+        ],
+        "den": [
+            1,
+            -19.50882578522699
+        ],
+        "gain_margin_min": 8.863341939849665,
+        "phase_margin_min": 51.687304210497096,
+        "settling_time_min": 5.995996418909909e-05,
+        "settling_time_max": 0.05551400956695013,
+        "overshoot_max": 15.40341402354765,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 19,
+        "num": [
+            1.1670229157671164
+        ],
+        "den": [
+            1,
+            -7.169206169014933
+        ],
+        "gain_margin_min": 8.200462751484574,
+        "phase_margin_min": 86.99920536136027,
+        "settling_time_min": 0.0002624928760213556,
+        "settling_time_max": 0.17619384213159325,
+        "overshoot_max": 5.639328141823693,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 20,
+        "num": [
+            17.938481057830984
+        ],
+        "den": [
+            1,
+            -17.034761030549543
+        ],
+        "gain_margin_min": 7.470895331081033,
+        "phase_margin_min": 51.17076267690939,
+        "settling_time_min": 5.1692624875307144e-05,
+        "settling_time_max": 0.07270716966416094,
+        "overshoot_max": 15.463962656588402,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 21,
+        "num": [
+            7.901880290961281
+        ],
+        "den": [
+            1,
+            -0.4321104346462268
+        ],
+        "gain_margin_min": 7.716036727590659,
+        "phase_margin_min": 50.64968580292892,
+        "settling_time_min": 0.001919098926088027,
+        "settling_time_max": 2.304927606511539,
+        "overshoot_max": 19.837431551229145,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 22,
+        "num": [
+            14.719179183196688
+        ],
+        "den": [
+            1,
+            -8.800988050950743
+        ],
+        "gain_margin_min": 6.993652717548892,
+        "phase_margin_min": 55.29733014210075,
+        "settling_time_min": 0.00016906334511926168,
+        "settling_time_max": 0.10621011600840152,
+        "overshoot_max": 14.148878717704493,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 23,
+        "num": [
+            3.3799517626256153
+        ],
+        "den": [
+            1,
+            -10.416647920372725
+        ],
+        "gain_margin_min": 6.947316935337227,
+        "phase_margin_min": 45.85825973411198,
+        "settling_time_min": 2.4490914295596255e-06,
+        "settling_time_max": 0.1269902263361506,
+        "overshoot_max": 10.143565619009863,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 24,
+        "num": [
+            15.21878037265636
+        ],
+        "den": [
+            1,
+            -2.7686079417308096
+        ],
+        "gain_margin_min": 6.1563603765699915,
+        "phase_margin_min": 56.60392908358399,
+        "settling_time_min": 0.0005377875228341479,
+        "settling_time_max": 0.45789950814453384,
+        "overshoot_max": 9.39450262523192,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 25,
+        "num": [
+            9.574909676926262
+        ],
+        "den": [
+            1,
+            -0.3292137107506643
+        ],
+        "gain_margin_min": 9.474449917544824,
+        "phase_margin_min": 52.55676152678904,
+        "settling_time_min": 0.0014155771850876497,
+        "settling_time_max": 3.273820127729714,
+        "overshoot_max": 6.5045392460149705,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 26,
+        "num": [
+            9.214474377781704
+        ],
+        "den": [
+            1,
+            -6.479813755559931
+        ],
+        "gain_margin_min": 9.763121848239269,
+        "phase_margin_min": 46.54085459424674,
+        "settling_time_min": 0.00030219367119059,
+        "settling_time_max": 0.19462361489677235,
+        "overshoot_max": 17.402955291984306,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 27,
+        "num": [
+            2.53695141290995
+        ],
+        "den": [
+            1,
+            -6.719736746488683
+        ],
+        "gain_margin_min": 8.897223958167656,
+        "phase_margin_min": 54.181155905296855,
+        "settling_time_min": 0.00011731575750707451,
+        "settling_time_max": 0.13689439474913231,
+        "overshoot_max": 17.90624113556184,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 28,
+        "num": [
+            13.58736403103734
+        ],
+        "den": [
+            1,
+            -6.2025052268752905
+        ],
+        "gain_margin_min": 8.010657120221913,
+        "phase_margin_min": 60.59918288219419,
+        "settling_time_min": 0.0003180439961223703,
+        "settling_time_max": 0.2246057696271268,
+        "overshoot_max": 5.554971011470707,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 29,
+        "num": [
+            10.409831259369547
+        ],
+        "den": [
+            1,
+            -17.54118374311302
+        ],
+        "gain_margin_min": 5.885108933268207,
+        "phase_margin_min": 79.4950636114369,
+        "settling_time_min": 0.00011376977279803843,
+        "settling_time_max": 0.062371728609336874,
+        "overshoot_max": 11.347528432505836,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 30,
+        "num": [
+            14.987892090291016
+        ],
+        "den": [
+            1,
+            -11.57510028141868
+        ],
+        "gain_margin_min": 9.307413135987465,
+        "phase_margin_min": 75.45913583886404,
+        "settling_time_min": 0.0002483402018031121,
+        "settling_time_max": 0.08808003521719568,
+        "overshoot_max": 13.76567453962396,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 31,
+        "num": [
+            11.613245099687076
+        ],
+        "den": [
+            1,
+            -4.050448121671135
+        ],
+        "gain_margin_min": 8.229324851355482,
+        "phase_margin_min": 82.64934434940378,
+        "settling_time_min": 0.0004121752280961172,
+        "settling_time_max": 0.3703235790291095,
+        "overshoot_max": 15.063214850939453,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 32,
+        "num": [
+            5.491255958499334
+        ],
+        "den": [
+            1,
+            -12.057550985074723
+        ],
+        "gain_margin_min": 6.185407426750733,
+        "phase_margin_min": 68.77639032423332,
+        "settling_time_min": 0.00022470434094639424,
+        "settling_time_max": 0.11852487415336121,
+        "overshoot_max": 12.911398508898905,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 33,
+        "num": [
+            13.287776867838176
+        ],
+        "den": [
+            1,
+            -1.2473492628246907
+        ],
+        "gain_margin_min": 8.154017362148466,
+        "phase_margin_min": 57.251440707601716,
+        "settling_time_min": 0.0012085760413738174,
+        "settling_time_max": 0.9861217568462586,
+        "overshoot_max": 5.5392417390485695,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 34,
+        "num": [
+            10.615521290115057
+        ],
+        "den": [
+            1,
+            -3.6692032169185196
+        ],
+        "gain_margin_min": 6.36504113529786,
+        "phase_margin_min": 78.45840614053833,
+        "settling_time_min": 0.0003225892895273131,
+        "settling_time_max": 0.4086538853885183,
+        "overshoot_max": 15.055700047137094,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 35,
+        "num": [
+            18.450141466358236
+        ],
+        "den": [
+            1,
+            -6.982031656227834
+        ],
+        "gain_margin_min": 6.869947931517801,
+        "phase_margin_min": 86.01888114290315,
+        "settling_time_min": 0.00038897812943876147,
+        "settling_time_max": 0.15644500752748458,
+        "overshoot_max": 16.49260756337401,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 36,
+        "num": [
+            19.980353126893945
+        ],
+        "den": [
+            1,
+            -16.364940662822967
+        ],
+        "gain_margin_min": 8.612633731738601,
+        "phase_margin_min": 51.95285288033747,
+        "settling_time_min": 9.233976918073364e-05,
+        "settling_time_max": 0.06073770531621775,
+        "overshoot_max": 10.696682261802163,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 37,
+        "num": [
+            1.8180523791646794
+        ],
+        "den": [
+            1,
+            -13.000529951326833
+        ],
+        "gain_margin_min": 6.171937229555166,
+        "phase_margin_min": 47.86264429909724,
+        "settling_time_min": 6.79479796312174e-05,
+        "settling_time_max": 0.07848400373599927,
+        "overshoot_max": 10.700871555746835,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 38,
+        "num": [
+            7.233755399010561
+        ],
+        "den": [
+            1,
+            -14.857064949070583
+        ],
+        "gain_margin_min": 5.6615180062477135,
+        "phase_margin_min": 57.52346515046142,
+        "settling_time_min": 0.00011716538465792795,
+        "settling_time_max": 0.08476291276767002,
+        "overshoot_max": 19.759093051343555,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 39,
+        "num": [
+            15.976221103868076
+        ],
+        "den": [
+            1,
+            -6.521134603968662
+        ],
+        "gain_margin_min": 5.2168663795939585,
+        "phase_margin_min": 76.2123378810583,
+        "settling_time_min": 0.0002995385334937776,
+        "settling_time_max": 0.1630686323255539,
+        "overshoot_max": 19.789776786129,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 40,
+        "num": [
+            7.655229182937926
+        ],
+        "den": [
+            1,
+            -11.00718688818196
+        ],
+        "gain_margin_min": 6.122551168699804,
+        "phase_margin_min": 68.58683392391806,
+        "settling_time_min": 2.124051785358282e-05,
+        "settling_time_max": 0.08273709190799389,
+        "overshoot_max": 18.865112150007654,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 41,
+        "num": [
+            8.546454056577607
+        ],
+        "den": [
+            1,
+            -18.114794303808164
+        ],
+        "gain_margin_min": 9.64627176147807,
+        "phase_margin_min": 52.0720714186985,
+        "settling_time_min": 0.00011227539933220353,
+        "settling_time_max": 0.052216447577906416,
+        "overshoot_max": 6.310924357095971,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 42,
+        "num": [
+            7.205881725752449
+        ],
+        "den": [
+            1,
+            -6.805455803106875
+        ],
+        "gain_margin_min": 9.225664623855817,
+        "phase_margin_min": 76.88985848544729,
+        "settling_time_min": 0.0002394835772491203,
+        "settling_time_max": 0.1927354864664999,
+        "overshoot_max": 5.941920170448093,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 43,
+        "num": [
+            16.81943019956221
+        ],
+        "den": [
+            1,
+            -12.945022017680142
+        ],
+        "gain_margin_min": 5.748030349613549,
+        "phase_margin_min": 82.9805361925383,
+        "settling_time_min": 9.509392911664653e-05,
+        "settling_time_max": 0.07746322143046552,
+        "overshoot_max": 7.955897813637113,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 44,
+        "num": [
+            15.671003874645654
+        ],
+        "den": [
+            1,
+            -17.447521428434438
+        ],
+        "gain_margin_min": 5.4239993757962655,
+        "phase_margin_min": 58.81146691816347,
+        "settling_time_min": 0.00010351348789491807,
+        "settling_time_max": 0.07995778465760417,
+        "overshoot_max": 18.51004580959561,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 45,
+        "num": [
+            7.022673622920811
+        ],
+        "den": [
+            1,
+            -18.3334109184811
+        ],
+        "gain_margin_min": 7.534368406561805,
+        "phase_margin_min": 57.15131069887091,
+        "settling_time_min": 4.098840409777819e-05,
+        "settling_time_max": 0.077250503764584,
+        "overshoot_max": 7.490675956256464,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 46,
+        "num": [
+            16.07192123194567
+        ],
+        "den": [
+            1,
+            -11.344922250656435
+        ],
+        "gain_margin_min": 8.893374098268506,
+        "phase_margin_min": 60.16616885619143,
+        "settling_time_min": 0.0001338223540537774,
+        "settling_time_max": 0.0977020263451058,
+        "overshoot_max": 15.448264326664006,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 47,
+        "num": [
+            8.74349529046114
+        ],
+        "den": [
+            1,
+            -0.5641292363426564
+        ],
+        "gain_margin_min": 5.4216556521794885,
+        "phase_margin_min": 86.55971156765182,
+        "settling_time_min": 0.001401233878943032,
+        "settling_time_max": 2.325647744858185,
+        "overshoot_max": 14.42321318747623,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 48,
+        "num": [
+            9.884306580705696
+        ],
+        "den": [
+            1,
+            -16.06122928635115
+        ],
+        "gain_margin_min": 8.686821079297836,
+        "phase_margin_min": 84.60027328049588,
+        "settling_time_min": 8.233813622327677e-05,
+        "settling_time_max": 0.07401528604294393,
+        "overshoot_max": 13.333603191376264,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "scenario": "other"
+    },
+    {
+        "id": 49,
+        "num": [
+            3.552054859706579
+        ],
+        "den": [
+            1,
+            -6.385767377281324
+        ],
+        "gain_margin_min": 5.618948793843742,
+        "phase_margin_min": 57.066650952489844,
+        "settling_time_min": 0.000227857987025191,
+        "settling_time_max": 0.19265014618110726,
+        "overshoot_max": 11.14968103188021,
+        "steadystate_error_max": 0.0001,
+        "metadata": "First order system with different response speed requirements.",
+        "scenario": "other"
+    }
+]
