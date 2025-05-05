@@ -32,3 +32,17 @@ export interface ControlInputs {
     // it's OK to return unknown here; the consumer can inspect/validate
     return res.json() as Promise<ApiResponse>;
   }
+
+  export function connectWebSocket(onMessage: (data: string) => void) {
+    const ws = new WebSocket("wss://control-agent.onrender.com/api/ws");
+  
+    ws.onmessage = (event) => {
+      onMessage(event.data);
+    };
+  
+    ws.onerror = (event) => {
+      console.error("WebSocket error", event);
+    };
+  
+    return ws;
+  }

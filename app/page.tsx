@@ -6,6 +6,7 @@ import { CheckCircleIcon, ExclamationCircleIcon } from '@heroicons/react/24/outl
 import ToolSelector from './components/ToolSelector';
 import { evaluateController, ControlInputs, ApiResponse } from "./lib/api";
 import Image from 'next/image';
+import { connectWebSocket } from "./lib/api";
 
 
 interface Iteration {
@@ -50,6 +51,8 @@ export default function ControlAgentDesigner() {
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState<ApiResponse | null>(null);
   const [error, setError] = useState<string|null>(null);
+  const [progress, setProgress] = useState<string[]>([]);
+
 
   async function onSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -68,6 +71,10 @@ export default function ControlAgentDesigner() {
       scenario,
     };
 
+    const ws = connectWebSocket((data) => {
+      setProgress((prev: string[]) => [...prev, data]);
+    });
+    
     try {
       const resp = await evaluateController(inputs);
       setResult(resp);
@@ -75,6 +82,7 @@ export default function ControlAgentDesigner() {
       setError(err instanceof Error ? err.message : 'An unknown error occurred');
     } finally {
       setLoading(false);
+      ws.close();
     }
   };
   
@@ -277,6 +285,17 @@ export default function ControlAgentDesigner() {
               <h3 className="font-semibold mb-2">Insight</h3>
               <p className="text-sm">Latest iteration failed: adjust specs.</p>
             </div>
+
+            {progress.length > 0 && (
+              <div className="bg-white dark:bg-gray-700 rounded-2xl p-6">
+                <h3 className="font-semibold mb-2">Live Progress</h3>
+                <ul className="space-y-2">
+                  {progress.map((msg, idx) => (
+                    <li key={idx} className="text-sm bg-gray-100 dark:bg-gray-600 p-2 rounded">{msg}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
 
             {result && (
               <div className="bg-gray-100 dark:bg-gray-700 rounded-2xl p-6 mt-6">
