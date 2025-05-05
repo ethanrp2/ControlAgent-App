@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { connectWebSocket } from "./lib/api";
 import { evaluateController, ControlInputs, ApiResponse } from "./lib/api";
 
 export default function HomePage() {
@@ -17,6 +18,7 @@ export default function HomePage() {
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState<ApiResponse | null>(null);
   const [error, setError] = useState<string|null>(null);
+  const [progress, setProgress] = useState<string[]>([]);
 
   const submitDisabled =
     !b0 || !den0 || !den1 || !phaseMargin || !tsMin || !tsMax || !ess ||
@@ -40,6 +42,10 @@ export default function HomePage() {
       scenario,
     };
 
+    const ws = connectWebSocket((data) => {
+      setProgress((prev: string[]) => [...prev, data]);
+    });
+
     try {
       const resp = await evaluateController(inputs);
       setResult(resp);
@@ -47,6 +53,7 @@ export default function HomePage() {
       setError(err instanceof Error ? err.message : 'An unknown error occurred');
     } finally {
       setLoading(false);
+      ws.close();
     }
   }
 
@@ -146,6 +153,16 @@ export default function HomePage() {
         </button>
       </form>
 
+      {progress.length > 0 && (
+        <div className="mt-4 p-4 bg-blue-50 dark:bg-blue-900/50 text-blue-800 dark:text-blue-300 rounded-lg">
+          <h2>Progress:</h2>
+          <ul>
+            {progress.map((msg, idx) => (
+              <li key={idx}>{msg}</li>
+            ))}
+          </ul>
+        </div>
+      )}
       {error && (
         <div className="mt-4 p-4 bg-red-50 dark:bg-red-900/50 text-red-600 dark:text-red-300 rounded-lg">
           {error}

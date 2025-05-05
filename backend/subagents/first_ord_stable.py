@@ -15,7 +15,7 @@ class first_ord_stable_Design:
 
 
 
-    def handle_task(self, system, thresholds, task_requirement, scenario):
+    def handle_task(self, system, thresholds, task_requirement, scenario, progress_callback=None):
         num_attempt = 1
         # Implement the task handling process
         # print(f"Handling controller design for system {system['id']} scenario {scenario}")
@@ -78,7 +78,12 @@ class first_ord_stable_Design:
                         "performance": design['performance'],
                         "conversation_rounds": num_attempt
                     }
-
+                    if progress_callback:
+                        progress_callback(
+                            f"Success at round {num_attempt}!\n"
+                            f"Parameters: omega_L={omega_L}, beta_b={beta_b}\n"
+                            f"Performance: Phase margin = {phase_margin}, Settling time = {settlingtime}, Steady-state error = {sse}"
+                        )
                     # Save success information and final design to the log
                     conversation_log.append({
                         "Design Success": True,
@@ -90,11 +95,19 @@ class first_ord_stable_Design:
                 # abaltion 1: with or without feedback
                 feedback = feedback_prompt(self.design_memory, thresholds)
                 problem_statement = prompt + new_problem + "\n\n" + feedback + response_format_PI
+                if progress_callback:
+                    progress_callback(
+                        f"Round {num_attempt}: Stable but does not meet requirements.\n"
+                        f"Parameters: omega_L={omega_L}, beta_b={beta_b}\n"
+                        f"Performance: Phase margin = {phase_margin}, Settling time = {settlingtime}, Steady-state error = {sse}"
+                    )
             else:
                 self.design_memory.add_design(
                     parameters={'omega_L': omega_L, 'beta_b': beta_b},
                     performance={'phase_margin': 'unstable', 'settling_time': 'unstable', 'steadystate_error': 'unstable'}
                 )
+                if progress_callback:
+                    progress_callback(f"Round {num_attempt}: Unstable design.\nParameters: omega_L={omega_L}, beta_b={beta_b}")
                 # Save unstable design information to the log
                 conversation_log.append({
                     "Design Success": False,

@@ -1,8 +1,9 @@
 # backend/api.py
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, WebSocket
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 from dotenv import load_dotenv
+from ws_manager import WebSocketManager
 
 from runner import run_control_agent_from_inputs
 
@@ -16,6 +17,7 @@ app.add_middleware(
     allow_methods=["POST"],
     allow_headers=["*"],
 )
+ws_manager = WebSocketManager()
 
 class EvalRequest(BaseModel):
     num:              list[float] = Field(..., description="Numerator coeffs, e.g. [b0]")
@@ -31,10 +33,22 @@ class EvalResponse(BaseModel):
     success: bool
     data:    dict
 
-@app.post("/api/evaluate", response_model=EvalResponse)
-def evaluate(req: EvalRequest):
+@app.websocket("/api/ws")
+async def websocket_endpoint(websocket: WebSocket):
+    await ws_manager.connect(websocket)
     try:
-        result = run_control_agent_from_inputs(req.model_dump())
+        while True:
+            await websocket.receive_text()  # optional keep-alive, no-op
+    except Exception:
+        ws_manager.disconnect(websocket)
+
+@app.post("/api/evaluate", response_model=EvalResponse)
+async def evaluate(req: EvalRequest):
+    try:
+        async def progress_callback(message: str):
+            await ws_manager.broadcast(message)
+
+        result = run_control_agent_from_inputs(req.model_dump(), progress_callback)
         return {"success": True, "data": result}
     except Exception as e:
         raise HTTPException(500, detail=str(e))

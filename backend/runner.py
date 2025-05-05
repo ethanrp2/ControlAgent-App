@@ -7,7 +7,7 @@ from instruction import central_agent_prompt, response_instruct
 
 load_dotenv()  # for your OPENAI_API_KEY etc.
 
-def run_control_agent_from_inputs(system_input: dict) -> dict:
+def run_control_agent_from_inputs(system_input: dict, progress_callback=None) -> dict:
     """
     Compute a controller design from a single-system description.
     system_input keys:
@@ -62,7 +62,7 @@ def run_control_agent_from_inputs(system_input: dict) -> dict:
 
     # 6) call the LLM agent
     agent = CentralAgentLLM()
-    raw = agent.assign_task(system_input, full_prompt, thresholds, scenario)
+    raw = agent.assign_task(system_input, full_prompt, thresholds, scenario, progress_callback)
 
     # 7) return the JSON-parsed response
     return raw  # assume it’s already a dict; if string, json.loads(raw)

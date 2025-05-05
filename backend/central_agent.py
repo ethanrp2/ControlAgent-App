@@ -22,7 +22,7 @@ class CentralAgentLLM:
         self.gpt4 = GPT4(engine=engine, temperature=temperature, max_tokens=max_tokens)
 
 
-    def assign_task(self, system, input_prompt, thresholds, scenario):
+    def assign_task(self, system, input_prompt, thresholds, scenario, progress_callback=None):
         # Parse the LLM response, which follows a strict JSON format.
         response = self.gpt4.complete(input_prompt)
 
@@ -35,11 +35,13 @@ class CentralAgentLLM:
             sub_agent = self.sub_agents[agent_number]
             print(f"Activating sub-agent: {agent_number}")
             print( parsed_response['Task Requirement'])
-            response = sub_agent.handle_task(system, thresholds, parsed_response['Task Requirement'], scenario)
+            if progress_callback:
+                progress_callback(f"Activating sub-agent {agent_number}: {parsed_response['Task Requirement']}")
+            response = sub_agent.handle_task(system, thresholds, parsed_response['Task Requirement'], scenario, progress_callback)
         else:
+            if progress_callback:
+                progress_callback("No suitable sub-agent found for this task.")
             print("No suitable sub-agent found for this task.")
-
-        
 
         return response
 
