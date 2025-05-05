@@ -42,7 +42,7 @@ export default function ControlAgentDesigner() {
   const [ess, setEss] = useState("0.0001");
   const [status] = useState('running');
 
-  const [tau, setTau] = useState("0");
+  const [tau] = useState("0");
 
   const tsError = tsMin !== '' && tsMax !== '' && (Number(tsMin) < 0 || Number(tsMax) < 0 || Number(tsMin) > Number(tsMax));
   const formValid = b0 && den0 && den1 && phaseMargin && tsMin && tsMax && ess && !tsError && Number(tsMin) < Number(tsMax) && Number(tsMin) > 0;
