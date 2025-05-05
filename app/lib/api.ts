@@ -1,5 +1,6 @@
 // app/lib/api.ts
 
+
 export interface ControlInputs {
     num: number[];                
     den: number[];                
