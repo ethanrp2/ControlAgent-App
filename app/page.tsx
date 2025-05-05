@@ -5,6 +5,7 @@ import { Tab } from '@headlessui/react';
 import { CheckCircleIcon, ExclamationCircleIcon } from '@heroicons/react/24/outline';
 import ToolSelector from './components/ToolSelector';
 import { evaluateController, ControlInputs, ApiResponse } from "./lib/api";
+import Image from 'next/image';
 
 
 interface Iteration {
@@ -33,7 +34,6 @@ export default function ControlAgentDesigner() {
   const [b0, setB0] = useState("10.645786319352997");
   const [den0, setDen0] = useState("1");
   const [den1, setDen1] = useState("1.5623926006892073");
-  const [tau, setTau] = useState("0");
   const [scenario, setScenario] = useState("fast");
 
   const [phaseMargin, setPhaseMargin] = useState("48.553825399337036");
@@ -41,6 +41,8 @@ export default function ControlAgentDesigner() {
   const [tsMax, setTsMax] = useState("0.9163742832003272");
   const [ess, setEss] = useState("0.0001");
   const [status] = useState('running');
+
+  const [tau, setTau] = useState("0");
 
   const tsError = tsMin !== '' && tsMax !== '' && (Number(tsMin) < 0 || Number(tsMax) < 0 || Number(tsMin) > Number(tsMax));
   const formValid = b0 && den0 && den1 && phaseMargin && tsMin && tsMax && ess && !tsError && Number(tsMin) < Number(tsMax) && Number(tsMin) > 0;
@@ -69,8 +71,8 @@ export default function ControlAgentDesigner() {
     try {
       const resp = await evaluateController(inputs);
       setResult(resp);
-    } catch (err: any) {
-      setError(err.message);
+    } catch (err: unknown) {
+      setError(err instanceof Error ? err.message : 'An unknown error occurred');
     } finally {
       setLoading(false);
     }
@@ -89,10 +91,12 @@ export default function ControlAgentDesigner() {
               <span className="sr-only">Toggle dark mode</span>
               <span className={`${darkMode ? 'translate-x-6' : 'translate-x-1'} inline-block h-4 w-4 transform rounded-full bg-white transition`} />
             </Switch> */}
-            <img
+            <Image
               src="https://i.pravatar.cc/4"
               alt="Profile"
-              className="w-8 h-8 rounded-full border-2 border-gray-200 dark:border-gray-600"
+              width={32}
+              height={32}
+              className="rounded-full border-2 border-gray-200 dark:border-gray-600"
             />
           </nav>
         </header>
@@ -314,6 +318,12 @@ export default function ControlAgentDesigner() {
                     </div>
                   </div>
                 </div>
+              </div>
+            )}
+
+            {error && (
+              <div className="mt-4 p-4 bg-red-50 dark:bg-red-900/50 text-red-600 dark:text-red-300 rounded-lg">
+                {error}
               </div>
             )}
           </section>

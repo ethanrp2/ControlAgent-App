@@ -1,4 +1,3 @@
-
 "use client";
 import { useState } from "react";
 import { evaluateController, ControlInputs, ApiResponse } from "./lib/api";
@@ -44,8 +43,8 @@ export default function HomePage() {
     try {
       const resp = await evaluateController(inputs);
       setResult(resp);
-    } catch (err: any) {
-      setError(err.message);
+    } catch (err: unknown) {
+      setError(err instanceof Error ? err.message : 'An unknown error occurred');
     } finally {
       setLoading(false);
     }
@@ -147,7 +146,11 @@ export default function HomePage() {
         </button>
       </form>
 
-      {error && <div className="text-red-600">{error}</div>}
+      {error && (
+        <div className="mt-4 p-4 bg-red-50 dark:bg-red-900/50 text-red-600 dark:text-red-300 rounded-lg">
+          {error}
+        </div>
+      )}
 
       {result && (
         <div className="mt-6 p-4 bg-gray-100 rounded">
