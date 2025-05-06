@@ -53,12 +53,14 @@ export default function ControlAgentDesigner() {
   const [error, setError] = useState<string|null>(null);
 
   const [progress, setProgress] = useState<FinalTaskDesignResult[]>([]);
+  const [socket, setSocket] = useState<WebSocket | null>(null);
 
   async function onSubmit(e: React.FormEvent) {
     e.preventDefault();
     setLoading(true);
     setError(null);
     setResult(null);
+    setProgress([]);
 
     const inputs: ControlInputs = {
       num: [parseFloat(b0)],
@@ -71,9 +73,21 @@ export default function ControlAgentDesigner() {
       scenario,
     };
 
-    const ws = connectWebSocket(inputs, (data) => {
-      setProgress((prev) => [...prev, data]);
-    });
+    const ws = connectWebSocket(
+      inputs,
+      (data) => {
+        setProgress((prev) => [...prev, data]);
+        if (data.conversation_round === -1) {
+          ws.close();
+        }
+      },
+      undefined,
+      (err) => {
+        console.error("WebSocket error:", err);
+        setError("WebSocket connection failed.");
+      }
+    );
+    setSocket(ws);
     
     try {
       const resp = await evaluateController(inputs);
@@ -82,7 +96,7 @@ export default function ControlAgentDesigner() {
       setError(err instanceof Error ? err.message : 'An unknown error occurred');
     } finally {
       setLoading(false);
-      ws.close();
+      //ws.close();
     }
   };
   

@@ -43,9 +43,19 @@ export default function HomePage() {
       scenario,
     };
 
-    const ws = connectWebSocket(inputs, (data) => {
-      setProgress((prev) => [...prev, data]);
-    });
+    connectWebSocket(
+      inputs,
+      (data) => {
+        setProgress((prev) => [...prev, data]);
+      },
+      () => {
+        console.log("✅ WebSocket finished");
+      },
+      (err) => {
+        console.error("WebSocket error:", err);
+        setError("WebSocket connection failed.");
+      }
+    );
 
     try {
       const resp = await evaluateController(inputs);
@@ -54,7 +64,7 @@ export default function HomePage() {
       setError(err instanceof Error ? err.message : 'An unknown error occurred');
     } finally {
       setLoading(false);
-      ws.close();
+      //ws.close();
     }
   }
 

@@ -8,7 +8,7 @@ from llm.base import LLM
 
 class GPT4(LLM):
 
-    def __init__(self, max_tokens=1024, temperature=0.0, logprobs=None, n=1, engine='gpt-3.5-turbo',
+    def __init__(self, max_tokens=1024, temperature=0.0, logprobs=None, n=1, engine='gpt-4o-2024-08-06',
                  frequency_penalty=0, presence_penalty=0, stop=None, rstrip=False, **kwargs):
         super().__init__()
         self.max_tokens = max_tokens
