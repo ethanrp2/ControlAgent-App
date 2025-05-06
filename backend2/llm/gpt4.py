@@ -16,6 +16,7 @@ class GPT4(LLM):
         self.rstrip = rstrip
         self.engine = engine
         self.client = openai.OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+        print("🔑 Using OpenAI key:", os.getenv("OPENAI_API_KEY")[:8])
 
     def complete(self, prompt):
 
