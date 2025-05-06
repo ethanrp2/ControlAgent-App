@@ -36,6 +36,7 @@ class first_ord_stable_Design(AbstractSubAgent):
         while self.num_attempt < self.max_attempts:
             print("attempt {}".format(self.num_attempt))
             success, cur_result = self.handle_one_iter_design()
+            """
             if result_chan is not None:
                 await result_chan.put(cur_result)
                 await result_chan.join()
@@ -44,6 +45,21 @@ class first_ord_stable_Design(AbstractSubAgent):
                 if result_chan is not None:
                     await result_chan.put(TaskDesignResult(success=True, parameters={}, performance={},
                                                            conversation_round=-1))
+                break
+            """
+            if result_chan is not None:
+                await result_chan.put(cur_result)
+                print("✅ Streamed round to WebSocket:", cur_result)
+
+            if success:
+                # Send end-of-task marker
+                if result_chan is not None:
+                    await result_chan.put(TaskDesignResult(
+                        success=True,
+                        parameters={},
+                        performance={},
+                        conversation_round=-1
+                    ))
                 break
         return self.construct_final_result()
 
