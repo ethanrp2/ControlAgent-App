@@ -164,7 +164,7 @@ export default function HomePage() {
         </button>
       </form>
 
-      {progress.length > 0 && (
+      {progress?.length > 0 && (
         <div className="mt-4 p-4 bg-blue-50 dark:bg-blue-900/50 text-blue-800 dark:text-blue-300 rounded-lg">
           <h2>Progress:</h2>
           <ul>

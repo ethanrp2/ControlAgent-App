@@ -305,7 +305,7 @@ export default function ControlAgentDesigner() {
               <p className="text-sm">Latest iteration failed: adjust specs.</p>
             </div>
 
-            {progress.length > 0 && (
+            {progress?.length > 0 && (
               <div className="bg-white dark:bg-gray-700 rounded-2xl p-6">
                 <h3 className="font-semibold mb-2">Live Progress</h3>
                 <ul className="space-y-2">
