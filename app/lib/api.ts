@@ -34,7 +34,7 @@ export interface ControlInputs {
 export async function evaluateController(
   inputs: ControlInputs
 ): Promise<ApiResponse> {
-  const res = await fetch("https://controlagent-noah-dev.onrender.com/api/complete_task", {
+  const res = await fetch("https://controlagent-app-noah-dev.onrender.com/api/complete_task", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(inputs),
@@ -54,7 +54,7 @@ export async function evaluateController(
     onComplete?: () => void,
     onError?: (err: any) => void
   ) {
-    const ws = new WebSocket("wss://control-agent-noah-dev.onrender.com/api/ws");
+    const ws = new WebSocket("wss://controlagent-app-noah-dev.onrender.com/api/complete_task");
   
     ws.onopen = () => {
       ws.send(JSON.stringify(inputs));

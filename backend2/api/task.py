@@ -9,7 +9,7 @@ from pydantic import BaseModel, Field
 class CompleteTaskResp(BaseModel):
     is_success: bool = Field(..., description="task completed successfully or not")
     msg: str = Field(..., description="execution message")
-    final_result: FinalTaskDesignResult
+    final_result: Optional[FinalTaskDesignResult] = Field(None, description="result of task")
 
 
 async def complete_task(specs: TaskSpecs, _async: bool = False, result_queue: asyncio.Queue = None) -> CompleteTaskResp:

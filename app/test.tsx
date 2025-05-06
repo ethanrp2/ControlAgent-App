@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { connectWebSocket } from "./lib/api";
-import { evaluateController, ControlInputs, ApiResponse } from "./lib/api";
+import { evaluateController, ControlInputs, ApiResponse, FinalTaskDesignResult } from "./lib/api";
 
 export default function HomePage() {
   // form state for each field
@@ -18,7 +18,8 @@ export default function HomePage() {
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState<ApiResponse | null>(null);
   const [error, setError] = useState<string|null>(null);
-  const [progress, setProgress] = useState<string[]>([]);
+
+  const [progress, setProgress] = useState<FinalTaskDesignResult[]>([]);
 
   const submitDisabled =
     !b0 || !den0 || !den1 || !phaseMargin || !tsMin || !tsMax || !ess ||
@@ -43,7 +44,7 @@ export default function HomePage() {
     };
 
     const ws = connectWebSocket(inputs, (data) => {
-      setProgress((prev: string[]) => [...prev, data]);
+      setProgress((prev) => [...prev, data]);
     });
 
     try {
@@ -158,7 +159,7 @@ export default function HomePage() {
           <h2>Progress:</h2>
           <ul>
             {progress.map((msg, idx) => (
-              <li key={idx}>{msg}</li>
+              <li key={idx}>{JSON.stringify(msg)}</li>
             ))}
           </ul>
         </div>

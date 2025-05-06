@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { Tab } from '@headlessui/react';
 import { CheckCircleIcon, ExclamationCircleIcon } from '@heroicons/react/24/outline';
 import ToolSelector from './components/ToolSelector';
-import { evaluateController, ControlInputs, ApiResponse } from "./lib/api";
+import { evaluateController, ControlInputs, ApiResponse, FinalTaskDesignResult } from "./lib/api";
 import Image from 'next/image';
 import { connectWebSocket } from "./lib/api";
 
@@ -51,8 +51,8 @@ export default function ControlAgentDesigner() {
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState<ApiResponse | null>(null);
   const [error, setError] = useState<string|null>(null);
-  const [progress, setProgress] = useState<string[]>([]);
 
+  const [progress, setProgress] = useState<FinalTaskDesignResult[]>([]);
 
   async function onSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -72,7 +72,7 @@ export default function ControlAgentDesigner() {
     };
 
     const ws = connectWebSocket(inputs, (data) => {
-      setProgress((prev: string[]) => [...prev, data]);
+      setProgress((prev) => [...prev, data]);
     });
     
     try {
@@ -291,7 +291,7 @@ export default function ControlAgentDesigner() {
                 <h3 className="font-semibold mb-2">Live Progress</h3>
                 <ul className="space-y-2">
                   {progress.map((msg, idx) => (
-                    <li key={idx} className="text-sm bg-gray-100 dark:bg-gray-600 p-2 rounded">{msg}</li>
+                    <li key={idx} className="text-sm bg-gray-100 dark:bg-gray-600 p-2 rounded">{JSON.stringify(msg)}</li>
                   ))}
                 </ul>
               </div>
