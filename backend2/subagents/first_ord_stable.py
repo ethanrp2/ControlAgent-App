@@ -8,7 +8,10 @@ from llm.gpt4 import GPT4
 from model.control_task import TaskDesignResult, FinalTaskDesignResult
 from subagents.base import AbstractSubAgent
 from util import check_stability, loop_shaping, feedback_prompt
+import logging
 
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
 
 class first_ord_stable_Design(AbstractSubAgent):
     agent_name = "First-order stable system"
@@ -49,7 +52,10 @@ class first_ord_stable_Design(AbstractSubAgent):
             """
             if result_chan is not None:
                 await result_chan.put(cur_result)
-                print("✅ Streamed round to WebSocket:", json.dumps(cur_result.dict(), indent=2))
+                #print("✅ Streamed round to WebSocket:", json.dumps(cur_result.dict(), indent=2))
+                logger.info("🟢 Streamed round %s to WebSocket:\n%s",
+                            cur_result.conversation_round,
+                            json.dumps(cur_result.dict(), indent=2))
 
             if success:
                 # Send end-of-task marker
