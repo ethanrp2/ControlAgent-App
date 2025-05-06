@@ -36,10 +36,15 @@ class GPT4(LLM):
                     max_tokens=self.max_tokens
                 )
                 return response.choices[0].message.content
+                """
             except openai.RateLimitError:
                 logging.warning("Rate limit error. Retrying...")
                 time.sleep(max(4, 0.5 * (2 ** retry_interval_exp)))
                 retry_interval_exp += 1
+"""
+            except Exception as e:
+                logging.error(f"❌ GPT request failed: {type(e).__name__} - {str(e)}")
+                raise
             except openai.APIConnectionError:
                 logging.warning("API connection error. Retrying...")
                 time.sleep(max(4, 0.5 * (2 ** retry_interval_exp)))
