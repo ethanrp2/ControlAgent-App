@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { connectWebSocket } from "./lib/api";
-import { evaluateController, ControlInputs, ApiResponse, FinalTaskDesignResult } from "./lib/api";
+import { evaluateController, ControlInputs, ApiResponse, FinalTaskDesignResult, TaskDesignResult } from "./lib/api";
 
 export default function HomePage() {
   // form state for each field
@@ -19,7 +19,7 @@ export default function HomePage() {
   const [result, setResult] = useState<ApiResponse | null>(null);
   const [error, setError] = useState<string|null>(null);
 
-  const [progress, setProgress] = useState<FinalTaskDesignResult[]>([]);
+  const [progress, setProgress] = useState<TaskDesignResult[]>([]);
 
   const submitDisabled =
     !b0 || !den0 || !den1 || !phaseMargin || !tsMin || !tsMax || !ess ||

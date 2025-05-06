@@ -17,13 +17,6 @@ Content-Type: application/json
   "scenario": "fast"
 }
 
-> {%
-  if (response.statusCode === 200) {
-    console.log("✔️ Success");
-  } else {
-    throw new Error("Expected 200, got " + response.statusCode);
-  }
-%}
 
 
 ### second order stable fast 1

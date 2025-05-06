@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { Tab } from '@headlessui/react';
 import { CheckCircleIcon, ExclamationCircleIcon } from '@heroicons/react/24/outline';
 import ToolSelector from './components/ToolSelector';
-import { evaluateController, ControlInputs, ApiResponse, FinalTaskDesignResult } from "./lib/api";
+import { evaluateController, ControlInputs, ApiResponse, FinalTaskDesignResult, TaskDesignResult } from "./lib/api";
 import Image from 'next/image';
 import { connectWebSocket } from "./lib/api";
 
@@ -52,7 +52,7 @@ export default function ControlAgentDesigner() {
   const [result, setResult] = useState<ApiResponse | null>(null);
   const [error, setError] = useState<string|null>(null);
 
-  const [progress, setProgress] = useState<FinalTaskDesignResult[]>([]);
+  const [progress, setProgress] = useState<TaskDesignResult[]>([]);
   const [socket, setSocket] = useState<WebSocket | null>(null);
 
   async function onSubmit(e: React.FormEvent) {
@@ -304,9 +304,24 @@ export default function ControlAgentDesigner() {
               <div className="bg-white dark:bg-gray-700 rounded-2xl p-6">
                 <h3 className="font-semibold mb-2">Live Progress</h3>
                 <ul className="space-y-2">
-                  {progress.map((msg, idx) => (
-                    <li key={idx} className="text-sm bg-gray-100 dark:bg-gray-600 p-2 rounded">{JSON.stringify(msg)}</li>
-                  ))}
+                {progress.map((round, idx) => (
+                  <li key={idx} className="mb-3 p-3 rounded shadow bg-white dark:bg-gray-800">
+                    <div className="text-xs text-gray-500 mb-1">
+                      <strong>Round {round.conversation_round}</strong>
+                    </div>
+                    <div className="text-sm">
+                      <p><strong>Success:</strong> {round.success ? "✅" : "❌"}</p>
+                      <p><strong>Parameters:</strong> {JSON.stringify(round.parameters)}</p>
+                      <p><strong>Performance:</strong></p>
+                      <ul className="ml-4 list-disc">
+                        <li>Phase Margin: {round.performance.phase_margin?.toFixed(2)}°</li>
+                        <li>Settling Time Min: {round.performance.settling_time_min?.toFixed(4)}s</li>
+                        <li>Settling Time Max: {round.performance.settling_time_max?.toFixed(4)}s</li>
+                        <li>Steady-State Error: {round.performance.steadystate_error?.toFixed(4)}</li>
+                      </ul>
+                    </div>
+                  </li>
+                ))}
                 </ul>
               </div>
             )}

@@ -30,6 +30,17 @@ export interface ControlInputs {
     final_result: FinalTaskDesignResult;
   }
   
+  export interface TaskDesignResult {
+    success: boolean;
+    parameters: Record<string, number>;
+    performance: {
+      phase_margin?: number;
+      settling_time_min?: number;
+      settling_time_max?: number;
+      steadystate_error?: number;
+    };
+    conversation_round: number;
+  }
   
 export async function evaluateController(
   inputs: ControlInputs
@@ -48,38 +59,39 @@ export async function evaluateController(
   return res.json() as Promise<ApiResponse>;
 }
 
-  export function connectWebSocket(
-    inputs: ControlInputs,
-    onResult: (data: FinalTaskDesignResult) => void,
-    onComplete?: () => void,
-    onError?: (err: any) => void
-  ) {
-    const ws = new WebSocket("wss://controlagent-app-noah-dev.onrender.com/api/complete_task");
-  
-    ws.onopen = () => {
-      ws.send(JSON.stringify(inputs));
-    };
-  
-    ws.onmessage = (event) => {
-      const data = JSON.parse(event.data) as FinalTaskDesignResult;
-      onResult(data);
-      if (data.conversation_round === -1) {
-        ws.close();
-        onComplete?.();
-      }
-    };
-  
-    ws.onerror = (event) => {
-      console.error("WebSocket error", event);
+export function connectWebSocket(
+  inputs: ControlInputs,
+  onResult: (data: TaskDesignResult) => void,
+  onComplete?: () => void,
+  onError?: (err: any) => void
+): WebSocket {
+  const ws = new WebSocket("wss://controlagent-app-noah-dev.onrender.com/api/complete_task");
+
+  ws.onopen = () => {
+    ws.send(JSON.stringify(inputs));
+  };
+
+  ws.onmessage = (event) => {
+    const data = JSON.parse(event.data) as TaskDesignResult;
+    onResult(data);
+
+    if (data.conversation_round === -1) {
+      ws.close();
+      onComplete?.();
+    }
+  };
+
+  ws.onerror = (event) => {
+    console.error("WebSocket error", event);
+    onError?.(event);
+  };
+
+  ws.onclose = (event) => {
+    if (event.code !== 1000) {
+      console.warn("WebSocket closed unexpectedly:", event);
       onError?.(event);
-    };
-  
-    ws.onclose = (event) => {
-      if (event.code !== 1000) {
-        console.warn("WebSocket closed unexpectedly:", event);
-        onError?.(event);
-      }
-    };
-  
-    return ws;
-  }
+    }
+  };
+
+  return ws;
+}
