@@ -4,6 +4,7 @@ from central_agent import CentralAgentLLM, AgentNotFoundError
 from model.control_task import FinalTaskDesignResult
 from model.control_task import TaskSpecs
 from pydantic import BaseModel, Field
+from typing import Optional
 
 
 class CompleteTaskResp(BaseModel):
