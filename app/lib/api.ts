@@ -64,7 +64,7 @@ export function connectWebSocket(
   inputs: ControlInputs,
   onResult: (data: TaskDesignResult) => void,
   onComplete?: () => void,
-  onError?: (err: any) => void
+  onError?: (err: Error | CloseEvent) => void
 ): WebSocket {
   const ws = new WebSocket("wss://controlagent-app-noah-dev.onrender.com/api/complete_task");
 
@@ -84,7 +84,7 @@ export function connectWebSocket(
 
   ws.onerror = (event) => {
     console.error("WebSocket error", event);
-    onError?.(event);
+    onError?.(new Error("WebSocket error occurred"));
   };
 
   ws.onclose = (event) => {

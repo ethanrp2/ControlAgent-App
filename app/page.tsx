@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { Tab } from '@headlessui/react';
 import { CheckCircleIcon, ExclamationCircleIcon } from '@heroicons/react/24/outline';
 import ToolSelector from './components/ToolSelector';
-import { evaluateController, ControlInputs, ApiResponse, FinalTaskDesignResult, TaskDesignResult } from "./lib/api";
+import { evaluateController, ControlInputs, ApiResponse, TaskDesignResult } from "./lib/api";
 import Image from 'next/image';
 import { connectWebSocket } from "./lib/api";
 
@@ -62,6 +62,11 @@ export default function ControlAgentDesigner() {
     setResult(null);
     setProgress([]);
 
+    // Close existing socket if any
+    if (socket) {
+      socket.close();
+    }
+
     const inputs: ControlInputs = {
       num: [parseFloat(b0)],
       den: [parseFloat(den0), parseFloat(den1)],
@@ -97,7 +102,6 @@ export default function ControlAgentDesigner() {
       setError(err instanceof Error ? err.message : 'An unknown error occurred');
     } finally {
       setLoading(false);
-      //ws.close();
     }
   };
   

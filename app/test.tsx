@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { connectWebSocket } from "./lib/api";
-import { evaluateController, ControlInputs, ApiResponse, FinalTaskDesignResult, TaskDesignResult } from "./lib/api";
+import { evaluateController, ControlInputs, ApiResponse, TaskDesignResult } from "./lib/api";
 
 export default function HomePage() {
   // form state for each field
