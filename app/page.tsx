@@ -71,7 +71,7 @@ export default function ControlAgentDesigner() {
       scenario,
     };
 
-    const ws = connectWebSocket((data) => {
+    const ws = connectWebSocket(inputs, (data) => {
       setProgress((prev: string[]) => [...prev, data]);
     });
     

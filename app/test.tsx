@@ -42,7 +42,7 @@ export default function HomePage() {
       scenario,
     };
 
-    const ws = connectWebSocket((data) => {
+    const ws = connectWebSocket(inputs, (data) => {
       setProgress((prev: string[]) => [...prev, data]);
     });
 
