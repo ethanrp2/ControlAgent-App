@@ -29,7 +29,7 @@ export interface ControlInputs {
     msg: string;      // <-- now unknown instead of any
     final_result: FinalTaskDesignResult;
   }
-  
+
   export interface TaskDesignResult {
     success: boolean;
     parameters: Record<string, number>;
@@ -45,6 +45,7 @@ export interface ControlInputs {
 export async function evaluateController(
   inputs: ControlInputs
 ): Promise<ApiResponse> {
+  // Uses a temporary dev server. Can update this to a production level when development is complete
   const res = await fetch("https://controlagent-app-noah-dev.onrender.com/api/complete_task", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
