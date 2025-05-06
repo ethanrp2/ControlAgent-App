@@ -76,10 +76,11 @@ export default function ControlAgentDesigner() {
     const ws = connectWebSocket(
       inputs,
       (data) => {
-        setProgress((prev) => [...prev, data]);
         if (data.conversation_round === -1) {
           ws.close();
+          return;
         }
+        setProgress((prev) => [...prev, data]);
       },
       undefined,
       (err) => {

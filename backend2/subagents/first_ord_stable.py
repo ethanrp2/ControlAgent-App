@@ -123,8 +123,9 @@ class first_ord_stable_Design(AbstractSubAgent):
                     success=True,
                     parameters=design['parameters'],
                     performance=design['performance'],
-                    conversation_round=self.num_attempt + 1
+                    conversation_round=self.num_attempt
                 )
+                self.num_attempt += 1
                 return True, cur_iter_result
             else:
                 # abaltion 1: with or without feedback
