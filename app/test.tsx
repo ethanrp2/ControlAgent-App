@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { connectWebSocket } from "./lib/api";
-import { evaluateController, ControlInputs, ApiResponse } from "./lib/api";
+import { evaluateController, ControlInputs, ApiResponse, FinalTaskDesignResult, TaskDesignResult } from "./lib/api";
 
 export default function HomePage() {
   // form state for each field
@@ -18,7 +18,8 @@ export default function HomePage() {
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState<ApiResponse | null>(null);
   const [error, setError] = useState<string|null>(null);
-  const [progress, setProgress] = useState<string[]>([]);
+
+  const [progress, setProgress] = useState<TaskDesignResult[]>([]);
 
   const submitDisabled =
     !b0 || !den0 || !den1 || !phaseMargin || !tsMin || !tsMax || !ess ||
@@ -42,9 +43,19 @@ export default function HomePage() {
       scenario,
     };
 
-    const ws = connectWebSocket((data) => {
-      setProgress((prev: string[]) => [...prev, data]);
-    });
+    connectWebSocket(
+      inputs,
+      (data) => {
+        setProgress((prev) => [...prev, data]);
+      },
+      () => {
+        console.log("✅ WebSocket finished");
+      },
+      (err) => {
+        console.error("WebSocket error:", err);
+        setError("WebSocket connection failed.");
+      }
+    );
 
     try {
       const resp = await evaluateController(inputs);
@@ -53,7 +64,7 @@ export default function HomePage() {
       setError(err instanceof Error ? err.message : 'An unknown error occurred');
     } finally {
       setLoading(false);
-      ws.close();
+      //ws.close();
     }
   }
 
@@ -158,7 +169,7 @@ export default function HomePage() {
           <h2>Progress:</h2>
           <ul>
             {progress.map((msg, idx) => (
-              <li key={idx}>{msg}</li>
+              <li key={idx}>{JSON.stringify(msg)}</li>
             ))}
           </ul>
         </div>
