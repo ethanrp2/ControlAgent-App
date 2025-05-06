@@ -49,7 +49,7 @@ class first_ord_stable_Design(AbstractSubAgent):
             """
             if result_chan is not None:
                 await result_chan.put(cur_result)
-                print("✅ Streamed round to WebSocket:", cur_result)
+                print("✅ Streamed round to WebSocket:", json.dumps(cur_result.dict(), indent=2))
 
             if success:
                 # Send end-of-task marker
@@ -138,14 +138,15 @@ class first_ord_stable_Design(AbstractSubAgent):
             # Save unstable design information to the log
             feedback = feedback_prompt(self.design_memory, self.thresholds)
             self.problem_statement = self.prompt + self.new_problem + "\n\n" + feedback + response_format_PI
-        self.num_attempt += 1
+        
         design = self.design_memory.get_latest_design()
         cur_iter_result = TaskDesignResult(
             success=False,
             parameters=design['parameters'],
             performance=design['performance'],
-            conversation_round=self.num_attempt + 1
+            conversation_round=self.num_attempt
         )
+        self.num_attempt += 1
         return False, cur_iter_result
 
     def construct_final_result(self):
